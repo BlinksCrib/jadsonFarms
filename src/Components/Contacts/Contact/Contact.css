@@ -1,0 +1,101 @@
+.sub-contact-cont {
+  height: calc(100vh - 10vh);
+  width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(38, 140, 98, 0.1) -49.07%,
+      rgba(38, 140, 98, 0.87) 100%
+    ),
+    url(../../../assets/about.png);
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  object-fit: cover;
+  background-attachment: fixed;
+}
+.contact-cont {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--pry-white-color);
+}
+.contact1 {
+  width: 45%;
+  padding: 2rem;
+  height: 100%;
+  border: 6px solid var(--pry-light-green-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.contacts2 {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact2 {
+  width: 100%;
+  padding: 2rem;
+  height: 85%;
+  border: 6px solid var(--pry-light-green-color);
+}
+
+.iconss {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  cursor: pointer;
+  height: 15%;
+}
+.icons:hover {
+  border: 2px solid var(--pry-white-color);
+}
+.icons i:hover {
+  color: var(--pry-white-color);
+  transition: 1s ease-in-out;
+}
+.icons {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid var(--pry-white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem !important;
+  color: var(--pry-white-color) !important;
+  transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .sub-contact-cont {
+    height: calc(100vh - 10vh);
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(38, 140, 98, 0.1) -49.07%,
+        rgba(38, 140, 98, 0.87) 100%
+      ),
+      url(../../../assets/about-mobile1.png);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    object-fit: cover;
+    background-attachment: fixed;
+  }
+}

@@ -1,0 +1,9 @@
+.location{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--pry-green-color);
+    margin-bottom: 2rem;
+}

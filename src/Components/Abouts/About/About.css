@@ -1,0 +1,40 @@
+.about-cont {
+  height: calc(100vh - 10vh);
+  width: 100%;
+  background: linear-gradient(
+      180deg,
+      rgba(38, 140, 98, 0.1) -49.07%,
+      rgba(38, 140, 98, 0.87) 100%
+    ),
+    url(../../../assets/about.png);
+    background-size: cover;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    object-fit: cover;
+    background-attachment: fixed;
+}
+.sub_about-cont {
+  width: 80%;
+  height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub_about-cont h1{
+    color: var(--pry-white-color);
+    /* font-size: 4.5rem; */
+}
+@media (min-width: 1200px) {
+  .sub_about-cont h1{
+    font-size: 4.5rem;
+  }
+}
+/* @media (max-width: 1010px) {
+  .sub_about-cont h1{
+    font-size: 3.2rem;
+  }
+} */

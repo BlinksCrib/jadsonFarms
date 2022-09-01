@@ -1,0 +1,22 @@
+.sub-morelivestock-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+.morelivestock-cont{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.livestock1-cont{
+    width: 100%;
+}
+.fulllivestock{
+    width: 100%;
+}
+.fulllivestock img{
+    width: 100%;
+    object-fit: cover;
+}

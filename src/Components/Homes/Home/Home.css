@@ -1,0 +1,97 @@
+.child-cont{
+    background-image: url(../../../assets/desktopman.png);
+    height: calc(100vh - 10vh);
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10vh;
+    /* display: block !important; */
+    background-attachment: fixed;
+    object-fit: cover;
+}
+.child-cont1{
+    display: none !important;
+}
+.home_cont{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.72);;
+    backdrop-filter: blur(2px) !important;
+    height: calc(100vh - 10vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    /* opacity: 80%; */
+
+}
+.sub_content{
+    width: 80%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.card{
+    padding: 18px;
+    background-color: #268C43;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+.card:hover{
+    /* background: var(--pry-white-color); */
+    box-shadow: 0 3px var(--pry-green-color);
+}
+.card:hover{
+    rotate: 360deg;
+}
+.content2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 85%;
+}
+.content1 h1{
+    max-width: 500px;
+}
+.content2 p{
+    max-width: 17rem;
+    color: var(--pry-white-color);
+    padding-top: 12px;
+    padding-bottom: 20px;
+    letter-spacing: var(--spacing);
+}
+.content2 button{
+    border: none;
+    padding: 7px 40px;
+    border-radius: var(--radius);
+    font-weight: 600;
+}
+.service{
+    background-color: transparent;
+    border: 2px white solid !important;
+    color: var(--pry-white-color);
+}
+.contact{
+    color: var(--pry-green-color);
+}
+
+
+@media screen and (max-width: 992px) {
+    .home_cont{
+        width: 100%;
+    }
+}
+/* @media (max-width:850px) {
+    .child-cont1{
+        background-image: url(../../assets/mobileman.png);
+        height: 100vh;
+        width: 100%;
+        display: block !important;
+        margin-top: 12vh;
+        background-repeat: no-repeat;
+    }
+    .child-cont{
+        display: none !important;
+    }
+} */

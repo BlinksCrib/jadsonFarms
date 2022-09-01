@@ -1,0 +1,13 @@
+.sub-map-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+.map-cont{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
