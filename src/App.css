@@ -1,20 +1,27 @@
+
+
 :root {
-  --pry-green-color: #268C43;
-  --pry-light-green-color: rgb(246, 255, 249);
-  --pry-white-color: #FFFFFF;
-  --sec-white-color: #7D7D7D;
+  --pry-green-color: #005b1a;
+  --contact-back: #268c43;
+  --span-color: #6aff95;
+
+  --pry-white-color: #ffffff;
+  --sec-white-color: #7d7d7d;
+      --back:#0A0A0A;
+
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
+  --font-large: 600;
 
   --header-font: 'Fraunces', serif;
   --text-font: 'Barlow', sans-serif;
 }
 
-::-webkit-scrollbar{
-  width: 5px;
+::-webkit-scrollbar {
+  width: 4px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   border: none;
   background-color: var(--pry-light-green-color);
 }
@@ -23,3 +30,5 @@
   height: 3rem !important;
   border-radius: var(--radius);
 }
+
+/* about css */

@@ -1,101 +1,161 @@
-.sub-contact-cont {
-  height: calc(100vh - 10vh);
-  width: 100%;
-  background: linear-gradient(
-      180deg,
-      rgba(38, 140, 98, 0.1) -49.07%,
-      rgba(38, 140, 98, 0.87) 100%
-    ),
-    url(../../../assets/about.png);
-  background-size: cover;
-  /* background-position: center; */
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10vh;
-  object-fit: cover;
-  background-attachment: fixed;
-}
-.contact-cont {
-  width: 80%;
-  height: 90%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--pry-white-color);
-}
-.contact1 {
-  width: 45%;
-  padding: 2rem;
-  height: 100%;
-  border: 6px solid var(--pry-light-green-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.contacts2 {
-  width: 45%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.contact2 {
-  width: 100%;
-  padding: 2rem;
-  height: 85%;
-  border: 6px solid var(--pry-light-green-color);
-}
 
-.iconss {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  cursor: pointer;
-  height: 15%;
-}
-.icons:hover {
-  border: 2px solid var(--pry-white-color);
-}
-.icons i:hover {
-  color: var(--pry-white-color);
-  transition: 1s ease-in-out;
-}
-.icons {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: 2px solid var(--pry-white-color);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem !important;
-  color: var(--pry-white-color) !important;
-  transition: 1s ease-in-out;
-}
-
-@media screen and (max-width: 992px) {
-  .sub-contact-cont {
+.expect{
     height: calc(100vh - 10vh);
     width: 100%;
-    background: linear-gradient(
-        180deg,
-        rgba(38, 140, 98, 0.1) -49.07%,
-        rgba(38, 140, 98, 0.87) 100%
-      ),
-      url(../../../assets/about-mobile1.png);
+    background-image: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.47053) 53.65%, rgba(0, 0, 0, 0.310681) 60.94%, rgba(0, 0, 0, 0) 77.6%), url(../../../assets/contact.png);
+    background-position: center;
     background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+.all{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.all-pad{
+    width: 30%;
+    color: var(--main-color);
+}
+.expect h1{
+    font-size: 40px;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    font-weight: var(--font-large);
+}
+.pad{
+    width: 90%;
+}
+.contact h1{
+    text-align: center;
+    font-weight: var(--font-large);
+    /* font-size: 30px; */
+}
+.mob{
+    display: none;
+ }
+.mob1{
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+ .mob h1{
+    font-size: 40px;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    font-weight: var(--font-large);
+}
+.pade{
+    background-color: var(--back);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
-    object-fit: cover;
-    background-attachment: fixed;
-  }
+    padding: 3rem 0;
+}
+.contact1{
+    width: 100%;
+    background-color: var(--contact-back);
+    text-decoration: none;
+    border: none;
+    color: var(--pry-white-color);
+    padding:20px 47px;
+    font-size:18px ;
+}
+.mob-image{
+    width: 100%;
+}
+.mob-image img{
+    width: 100%;
+}
+.pac{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.contact-menu p{
+  padding-bottom:10px;
+  line-height: 1.3em;
+  font-size: 18px;
+}
+.back{
+    background-color:var(--menu-color);
+    padding:30px ;
+}
+.back i{
+    padding-bottom: 20px;
+}
+.message{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer-back);
+    color: var(--main-color);
+    padding: 20px 0;
+}
+.pas{
+    width: 50%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: flex-start; */
+    flex-direction: column;
+}
+.message h1{
+    text-align: center;
+    font-weight: var(--font-large);
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    font-weight: var(--font-large);
+}
+@media (max-width:1000px) {
+    .expect{
+        display: none;
+    }
+    .do{
+        width: 100%;
+
+    }
+    .mob{
+        display: block;
+        width: 100%;
+     } 
+     .pac{
+        flex-direction: column;
+        width: 100%;
+    }
+    .back{
+        margin-bottom: 30px;
+        padding:30px 0 30px 25px;
+    }
+    .pas{
+        width: 90%;
+    }
+    form{
+        width: 100%;
+    }
+    .contactus{
+        width: 100%;
+
+    }
+    .par{
+        display: none;
+    }
+    .par1{
+        display: block;
+    }
+    .pak{
+        width: 90%;
+        flex-direction: column;
+        
+    }
+    .pak p{
+        padding-bottom: 10px;
+    }
+
 }

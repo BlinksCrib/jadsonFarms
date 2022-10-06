@@ -1,47 +1,31 @@
 import React, { useState } from 'react'
 import { Carousel } from 'antd'
 import "./MoreLivestock.css"
-import fish from "../../../assets/fish.png"
-import pig from "../../../assets/pig.png"
-import hen from "../../../assets/hen.png"
+import servicecow from '../../../assets/servicecow.png'
 
-const contentStyle = {
-  height: '80vh',
-  width: '100%',
-  color: '#fff',
-  lineHeight: '160px',
-  textAlign: 'center',
-  background: '#364d79',
-  objectFit: 'cover',
-}
+
 
 
 const MoreLivestock = () => {
-  const [dotPosition, setDotPosition] = useState('right')
 
   return (
-    <div className='parent-cont'>
-      <div className='sub-morelivestock-cont'>
-        <div className='morelivestock-cont'>
-          <div className='livestock1-cont'>
-            <Carousel autoplay dotPosition={dotPosition} effect='fade'>
-              <div className='fulllivestock'>
-                <img src={hen} alt='hens' style={contentStyle} />
-              </div>
-              <div className='fulllivestock'>
-                <img src={fish} alt='hens' style={contentStyle} />
-              </div>
-              <div className='fulllivestock'>
-                <img src={pig} alt='hens' style={contentStyle} />
-              </div>
-              <div className='fulllivestock'>
-                <h3 style={contentStyle}>4</h3>
-              </div>
-            </Carousel>
-          </div>
-        </div>
+    <section class='about-us'>
+      <div className='pad'>
+        <div class="do">
+                <h1>What we do</h1>
+            <div class="hor-line"></div>
+            </div>
+            <div class="livestock">
+                <div class="livestock-image">
+                    <img src={servicecow} alt="" />
+                </div>
+                <div class="livestock-text">
+                    <h1>Livestock Production</h1>
+                    <p>We raise a lot of livestock, including chickens, fish, and cattle. Additionally, we offer consulting to anyone who is interested.</p>
+                </div>
+            </div>
       </div>
-    </div>
+    </section>
   )
 }
 

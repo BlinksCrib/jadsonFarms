@@ -1,98 +1,88 @@
-import React, { useEffect, useState } from 'react'
-import { NavLink, Link } from 'react-router-dom'
-import Jadsonbgremoved1 from '../../assets/Jadsonbgremoved1.png'
+import React, { useEffect, useState, useRef } from 'react';
+import { NavLink, Link } from 'react-router-dom';
+import Jadsonbgremoved1 from '../../assets/Jadsonbgremoved1.png';
 import "./Navbar.css"
 // import logo from "./logo.jpeg";
 const Navbar = () => {
-  const [isVisible, setIsVisible] = useState(false)
-
-  useEffect(() => {
-    // Button is displayed after scrolling for 500 pixels
-    const toggleVisibility = () => {
-      if (window.pageYOffset > 200) {
-        setIsVisible(true)
-      } else {
-        setIsVisible(false)
-      }
-    }
-    window.addEventListener('scroll', toggleVisibility)
-    return () => window.removeEventListener('scroll', toggleVisibility)
-  }, [])
-
-    const [toggleMenu, setToggleMenu] = useState(false)
+  const navRef = useRef(null);
+ const [toggle, setToggle] = useState(false);
 
 
-
+  const openNav = () => {
+    setToggle(true)
+    // navRef.current.style.width = ${240};
+    document.getElementById('mySidebar').style.width= "100%"
+  };
+  const closeNav = () => {
+        setToggle(false)
+    document.getElementById('mySidebar').style.width = '0px'
+    // navRef.current.style.width = ${0}px;
+  };
 
   return (
-    <>
-      <nav className='app__navbar'>
-        <div className='app__navbar-logo'>
-          <img src={Jadsonbgremoved1} alt='Jadsonbgremoved' />
-        </div>
-        <ul className='app__navbar-links'>
-          <li className='p__opensans'>
-            <a href='#home'>Home</a>
-          </li>
-          <li className='p__opensans'>
-            <a href='#about'>About</a>
-          </li>
-          <li className='p__opensans'>
-            <a href='#menu'>Menu</a>
-          </li>
-          <li className='p__opensans'>
-            <a href='#awards'>Awards</a>
-          </li>
-          <li className='p__opensans'>
-            <a href='#contact'>Contact</a>
-          </li>
-        </ul>
-        <div className='app__navbar-login'>
-          <a href='#login' className='p__opensans'>
-            Log In / Registration
-          </a>
-          <div />
-          <a href='/' className='p__opensans'>
-            Book Table
-          </a>
-        </div>
-        <div className='app__navbar-smallscreen'>
-          <i class='fas fa-bars' onClick={() => setToggleMenu(true)}></i>
-          {toggleMenu && (
-            <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
-              <i class='fas fa-times' onClick={() => setToggleMenu(false)}></i>
-              <ul className='app__navbar-smallscreen_links'>
-                <li>
-                  <a href='#home' onClick={() => setToggleMenu(false)}>
-                    Home
-                  </a>
-                </li>
-                <li>
-                  <a href='#about' onClick={() => setToggleMenu(false)}>
-                    About
-                  </a>
-                </li>
-                <li>
-                  <a href='#menu' onClick={() => setToggleMenu(false)}>
-                    Menu
-                  </a>
-                </li>
-                <li>
-                  <a href='#awards' onClick={() => setToggleMenu(false)}>
-                    Awards
-                  </a>
-                </li>
-                <li>
-                  <a href='#contact' onClick={() => setToggleMenu(false)}>
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
+    <div>
+      <nav className='navbar navbar-expand-lg navbar-light fixed-top'>
+        <div className='container app__navbar-logo'>
+          <Link className='navbar-brand' to='/'>
+            <img src={Jadsonbgremoved1} alt='Jadsonbgremoved' />
+          </Link>
+          {toggle ? (
+            // href='javascript:void(0)'
+            // className='closebtn'
+            // onClick={closeNav}
+            <i className='fas fa-times nav-btn' onClick={closeNav}></i>
+          ) : (
+            <i
+              className='fas fa-bars nav-btn navbar-toggler'
+              onClick={openNav}
+            ></i>
           )}
+          <div className='collapse navbar-collapse' id='navbarSupportedContent'>
+            <ul className='navbar-nav me-auto mb-2 mb-lg-0 ml-auto w-100'>
+              <li className='nav-item'>
+                <Link className='nav-link' to='/'>
+                  Home
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link className='nav-link' to='/service'>
+                  Services
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link className='nav-link' to='/about'>
+                  About us
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link className='nav-link' to='/contact'>
+                  Contact us
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-    </>
+
+      <div id='mySidebar' className='sidebar' ref={navRef}>
+        <Link to='/' onClick={closeNav}>
+          Home
+        </Link>{' '}
+        <br />
+        <Link to='/service' onClick={closeNav}>
+         Services
+        </Link>{' '}
+        <br />
+        <Link to='/about' onClick={closeNav}>
+          About us
+        </Link>{' '}
+        <br />
+        <Link to='/contact' onClick={closeNav}>
+          Contact us
+        </Link>{' '}
+        <br />
+      </div>
+    </div>
   )
 }
 

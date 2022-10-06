@@ -1,26 +1,31 @@
-.tested-cont{
-    width: 100%;
-    height: 80vh;
-    background-image: url(../../../assets/testedunder.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tested-cont {
+  width: 100%;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.sub_tested-cont{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    height: 100%;
+.sub_tested-cont {
+  width: 90%;
+  display: flex;
+  background-image:linear-gradient( to left,#000000,
+      rgba(0, 0, 0, 0.4705),
+      rgba(0, 0, 0, 0.3107),
+      rgba(0, 0, 0, 0)
+    ), url(../../../assets/testedunder.png);
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
 }
-.tested1{
-    height: 100%;
-    width: 50%;
-    /* background: rgba(38, 140, 67, 0.72); */
-    /* transform: matrix(-1, 0, 0, 1, 6, 0) !important; */
-    /* border: 1px solid #8A8A8A; */
+.tested1 {
+  height: 100%;
+  width: 50%;
+  /* background: rgba(38, 140, 67, 0.72); */
+  /* transform: matrix(-1, 0, 0, 1, 6, 0) !important; */
+  /* border: 1px solid #8A8A8A; */
 }
-.tested1 img{
-    width: 71%;
+.tested1 img {
+  width: 71%;
 }

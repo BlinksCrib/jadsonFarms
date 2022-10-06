@@ -1,22 +1,61 @@
-.sub-morelivestock-cont{
+.about-us{
     width: 100%;
+    background-color: var(--main-color);
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 10vh;
-}
-.morelivestock-cont{
-    width: 80%;
-    display: flex;
     justify-content: center;
+    padding: 2rem 0;
 }
-.livestock1-cont{
-    width: 100%;
+.pad{
+    width: 90%;
 }
-.fulllivestock{
-    width: 100%;
+.do h1{
+    font-size: 36px;
+    color: var(--pry-green-color);
+    padding-bottom: 4px;
 }
-.fulllivestock img{
+.do p{
+    color: var(--other-text-color);
+    font-size: 18px;
+    line-height: 1.3em;
+}
+.do{
+    margin-bottom: 2rem;
+}
+.livestock{
+    margin-bottom: 2rem;
+}
+.livestock-image{
     width: 100%;
+    height: 70vh;
+}
+.livestock-image img{
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+}
+.livestock-text{
+    width: 50%;
+}
+
+
+.hor-line{
+    width: 24%;
+    height: 3px;
+    background-color: var(--pry-green-color);
+}
+
+
+@media (max-width:1000px) {
+    .do{
+        width: 100%;
+
+    }
+    .hor-line{
+        width: 100%;
+    }
+    .livestock-text{
+        width: 100%;
+    }
+
 }

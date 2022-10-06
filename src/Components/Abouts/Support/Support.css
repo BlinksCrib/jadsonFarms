@@ -6,13 +6,16 @@
   align-items: center;
 }
 .sub_support-cont {
-  width: 80%;
+  width: 90%;
   /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 2rem 0 2rem 0;
+}
+.farm-support img{
+  width: 100%;
 }
 .sub_support-cont h1 {
   color: var(--pry-green-color);

@@ -1,23 +1,15 @@
 import React from 'react';
-import manure from '../../../../assets/manure.png';
+// import fish from '../../../../assets/fish.png';
+import './Manure.css';
 
 const Manure = () => {
   return (
     <div className='parent-cont'>
-      <div className='stock-cont'>
-        <div className='live-cont'>
-          <div className='live_cont1'>
-            <img src={manure} alt='' />
-          </div>
-          <div className='live_cont2'>
-            <h1>
-              <span>Livestock</span> Farming At its Best
-            </h1>
-            <p>
-              We raise a lot of livestock, including chickens, fish, and cattle.
-              Additionally, we offer consulting to anyone who is interested.
-            </p>
-          </div>
+      <div className='manures-cont'>
+        <div className='manure-cont'>
+          <div className="manure1"></div>
+          <div className="manure2"></div>
+          <div className="manure3"></div>
         </div>
       </div>
     </div>

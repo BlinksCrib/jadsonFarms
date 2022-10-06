@@ -1,20 +1,28 @@
-import React from 'react'
-import ContactBox from '../ContactBox/ContactBox'
-import Footer from '../Footer/Footer'
-import Map from '../Map/Map'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
+import Consultancy from '../Abouts/Consultancy/Consultancy'
+import Contactabout from '../Abouts/Contactabout/Contactabout'
+import Foot from './Foot/Foot'
 import Home from './Home/Home'
 import Offer from './Offer/Offer'
-import Tested from './Tested/Tested'
 
 const All = () => {
+  const routepath = useLocation()
+  const onTop = () => {
+    window.scrollTo(0, 0)
+  }
+
+  useEffect(() => {
+    onTop()
+  }, [routepath])
+  
   return (
-    <div style={{ backgroundColor: '#F6FFF9' }}>
+    <div style={{marginTop: "10vh"}}>
       <Home />
       <Offer />
-      <Tested />
-      <ContactBox />
-      <Map />
-      <Footer />
+      <Consultancy />
+      <Contactabout />
+      <Foot />
     </div>
   )
 }

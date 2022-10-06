@@ -1,0 +1,68 @@
+.about-us {
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.pad {
+  width: 90%;
+}
+.animal-manure h1 {
+  font-size: 36px;
+  color: var(--pry-green-color) !important;
+  padding-bottom: 7px;
+}
+.animal-manure p {
+  color: var(--other-text-color);
+  font-size: 18px;
+  line-height: 1.3em;
+}
+.animal-manure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.animal-manure-text {
+  width: 48%;
+}
+.animal-manure-image {
+  width: 48%;
+  height: 70vh;
+  object-fit: cover;
+}
+.animal-manure-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border:  none;
+}
+.midp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactp {
+  background-color: var(--pry-green-color);
+  text-decoration: none;
+  border: none;
+  color: var(--pry-white-color);
+  padding: 14px 47px;
+  font-size: 18px;
+}
+@media (max-width: 992px) {
+  .animal-manure {
+    flex-direction: column;
+  }
+  .animal-manure-image {
+    width: 100%;
+  }
+  .animal-manure-text {
+    width: 100%;
+  }
+  .midp {
+    width: 100%;
+  }
+}

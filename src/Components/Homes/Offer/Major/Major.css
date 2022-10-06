@@ -1,0 +1,38 @@
+.major-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0 2rem 0;
+}
+.sub_major-cont {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.major2 {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.major-img1 {
+  width: 65%;
+  height: 100%;
+  object-fit: cover;
+}
+.major-img2 {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+  .major-img2 {
+    display: none;
+  }
+  .major-img1 {
+    width: 100%;
+  }
+}

@@ -1,40 +1,100 @@
-.about-cont {
-  height: calc(100vh - 10vh);
-  width: 100%;
-  background: linear-gradient(
-      180deg,
-      rgba(38, 140, 98, 0.1) -49.07%,
-      rgba(38, 140, 98, 0.87) 100%
-    ),
-    url(../../../assets/about.png);
+.agriculture {
+    height: calc(100vh - 10vh);
+    width: 100%;
+    background-image: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.47053) 53.65%, rgba(0, 0, 0, 0.310681) 60.94%, rgba(0, 0, 0, 0) 77.6%), url(../../../assets/smile.png);
+    background-position: center;
     background-size: cover;
-    /* background-position: center; */
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 10vh;
-    object-fit: cover;
-    background-attachment: fixed;
 }
-.sub_about-cont {
-  width: 80%;
-  height: 100vh;
+
+
+.all{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.all-pad{
+    width: 30%;
+    color: var(--pry-white-color);
+}
+.agriculture h1{
+    font-size: 40px;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    font-weight: var(--font-large);
+}
+span{
+    color: var(--span-color);
+}
+.mob{
+    display: none;
+ }
+.mob1{
+    color: var(--pry-white-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+ .all h1{
+    color: var(--pry-white-color) !important;
+}
+.all p{
+    color: var(--pry-white-color) !important;
+}
+ .mob h1{
+    font-size: 40px;
+    line-height: 1.3;
+    padding-bottom: 10px;
+    font-weight: var(--font-large);
+}
+.pade{
+    background-color: var(--back);
+    height: calc(100vh - 10vh);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
 }
-.sub_about-cont h1{
+.contact1{
+    width: 100%;
+    background-color: var(--contact-back);
+    text-decoration: none;
+    border: none;
     color: var(--pry-white-color);
-    /* font-size: 4.5rem; */
+    padding:20px 47px;
+    font-size:18px ;
 }
-@media (min-width: 1200px) {
-  .sub_about-cont h1{
-    font-size: 4.5rem;
-  }
+.mob-image{
+    width: 100%;
 }
-/* @media (max-width: 1010px) {
-  .sub_about-cont h1{
-    font-size: 3.2rem;
-  }
-} */
+.mob-image img{
+    width: 100%;
+    height: 100%;
+}
+.pad{
+    width: 90%;
+}
+
+
+@media (max-width:1000px) {
+    .agriculture{
+        display: none;
+    }
+    .mob{
+        display: block;
+        width: 100%;
+     }
+    .horr-line{
+        width: 100%;
+    }
+     .mob h1{
+    font-size: 35px;
+}
+}
+

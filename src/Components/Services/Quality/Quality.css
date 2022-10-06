@@ -1,0 +1,53 @@
+.about-us {
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.pad {
+  width: 90%;
+}
+.mining h1 {
+  font-size: 36px;
+  color: var(--pry-green-color) !important;
+  padding-bottom: 7px;
+}
+.mining p {
+  color: var(--other-text-color);
+  font-size: 18px;
+  line-height: 1.3em;
+}
+.mining {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.mining-text {
+  width: 48%;
+}
+.mining-image {
+  width: 48%;
+  height: 70vh;
+  object-fit: cover;
+}
+.mining-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1000px) {
+  .mining {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .mining-image {
+    width: 100%;
+  }
+  .mining-text {
+    width: 100%;
+  }
+}

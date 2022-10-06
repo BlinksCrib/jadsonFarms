@@ -1,0 +1,51 @@
+.manures-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+.manure-cont {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.manure1 {
+  background-image: url(../../../../assets/cow.png);
+  width: 30%;
+  height: 65vh;
+  object-fit: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+.manure2 {
+  background-image: url(../../../../assets/hen.png);
+  /* border: 5px solid red; */
+  width: 30%;
+  height: 65vh;
+  object-fit: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+.manure3 {
+  background-image: url(../../../../assets/pig.png);
+  width: 30%;
+  height: 65vh;
+  object-fit: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+@media screen and (max-width: 992px) {
+  .manure-cont {
+    flex-direction: column;
+  }
+  .manure1,
+  .manure2,
+  .manure3 {
+    width: 100%;
+  }
+}

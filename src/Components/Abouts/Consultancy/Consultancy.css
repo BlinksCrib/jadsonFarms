@@ -1,0 +1,154 @@
+
+span{
+    color: var(--span-color);
+}
+.mob{
+    display: none;
+ }
+.mob1{
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+ .mob h1{
+    font-size: 40px;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    font-weight: var(--font-large);
+}
+.pade{
+    background-color: var(--back);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+.contact1{
+    width: 100%;
+    background-color: var(--contact-back);
+    text-decoration: none;
+    border: none;
+    color: var(--main-color);
+    padding:20px 47px;
+    font-size:18px ;
+}
+.hor-line{
+    width: 27%;
+    height: 3px;
+    background-color: var(--contact-back);
+}
+.agro-business{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.agro-business-image{
+    width: 100%;
+}
+.agrobusiness-image img{
+    width: 100%;
+}
+.farm-support{
+    width: 100%;
+}
+.more{
+    display: flex;
+    justify-content: flex-end;
+}
+.mor{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: flex-end;
+    width: 100%;
+} 
+.horr-line{
+    width: 30%;
+    height: 3px;
+    background-color: var(--pry-green-color);
+}
+.consultancy {
+    margin-top: 3rem;
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0.67053) 53.65%, rgba(0, 0, 0, 0.310681) 60.94%, rgba(0, 0, 0, 0) 77.6%), url(../../../assets/testedunder.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--pry-white-color);
+}
+.pat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3rem;
+    width: 30%;
+}
+.consultancy h1{
+    color: var(--pry-white-color);
+}
+.consultancy p{
+    color: var(--pry-white-color);
+}
+.contact-us{
+    border: 2px solid var(--pry-white-color);
+     text-decoration: none;
+     background-color: transparent;
+     color: var(--pry-white-color);
+    padding:14px 20px;
+    width: 50%;
+    font-size:18px ;
+    margin-top: 2rem;
+
+}
+.consultancy1{
+    display: none;
+    background-color: black;
+    padding: 3rem 0;
+}
+.pact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.consultancy1 h1{
+    color: var(--pry-white-color);
+    font-size: 36px;
+    padding-bottom: 7px;
+}
+.consultancy1 p{
+    color: var(--pry-white-color);
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+.contact-us1{
+    border: 2px solid var(--pry-white-color);
+     text-decoration: none;
+     background-color: transparent;
+     color: var(--pry-white-color);
+    padding:14px 20px;
+    width: 100%;
+    font-size:18px ;
+    margin-top: 2rem;
+
+}
+@media (max-width:1000px) {
+    .horr-line{
+        width: 100%;
+    }
+
+    .consultancy{
+        display: none;
+    }
+    .consultancy1{
+        display: block;
+    }
+
+}
+

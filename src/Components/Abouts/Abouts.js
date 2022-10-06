@@ -1,23 +1,31 @@
-import React from 'react'
-import ContactBox from '../ContactBox/ContactBox'
+import React, { useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import Footer from '../Footer/Footer'
 import Map from '../Map/Map'
 import About from './About/About'
-import AboutButton from './AboutButton/AboutButton'
-import More from './More/More'
+import Consultancy from './Consultancy/Consultancy'
+import Contactabout from './Contactabout/Contactabout'
 import Support from './Support/Support'
 import Weare from './Weare/Weare'
 
 const Abouts = () => {
+  const routepath = useLocation();
+  const onTop = () =>{
+    window.scrollTo(0, 0);
+  }
+
+  useEffect(() => {
+    onTop()
+  }, [routepath])
+  
   return (
-    <div>
+    <div style={{ marginTop: '10vh' }}>
       <About />
       <Weare />
       <Support />
-      <More />
-      <AboutButton />
+      <Consultancy />
+      <Contactabout />
       <Map />
-      <ContactBox />
       <Footer />
     </div>
   )

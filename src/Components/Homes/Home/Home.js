@@ -1,51 +1,50 @@
 import React from 'react'
 import './Home.css'
-import setting from '../../../assets/setting.png'
-import call from '../../../assets/call.png'
+import home from '../../../assets/home.png'
 
 const Home = () => {
   return (
-    <div className='parent-cont'>
-      <div className='child-cont'>
-        <div className='home_cont'>
-          <div className='sub_content'>
-            <div className='content1'>
+    <>
+      <section class='expects'>
+        <div class='all'>
+          <div class='all-pad'>
+            <div class='desk'>
               <h1>
-                Improve your <span>farm</span> with our top-notch{' '}
-                <span> Integration & Services</span>
+                You can <span> Better</span> Your <span> Farm</span>
               </h1>
               <p>
-                Our primary line of business is food production as well as farm
-                support and/or consulting services that satisfy the needs of our
-                customers.
+                At JADSON, food production is our main business, along with
+                agricultural assistance and/or consulting services that meet the
+                demands of our clients.
               </p>
-            </div>
-            <div className='content2'>
-              <div className='card1 card'>
-                <div className='sub_card'>
-                  <img src={setting} alt='setting icon' />
-                  <p>
-                    We offer ranges of agricultural services for best
-                    productivity.
-                  </p>
-                  <button className='service'>Our services</button>
-                </div>
-              </div>
-              <div className='card2 card'>
-                <div className='sub_card'>
-                  <img src={call} alt='telephone' />
-                  <p>
-                    At Jadson Farms, we bring innovations to our Consultancy
-                    Services.
-                  </p>
-                  <button className='contact'>Contact us</button>
-                </div>
-              </div>
+              <button class="contacth">Explore</button>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+
+      <section class='mob'>
+        <div class='mob1'>
+          <div class='pade'>
+            <div class='pad'>
+              <h1>
+                You can <span> Better</span> Your <span> Farm</span>
+              </h1>
+              <p>
+                {' '}
+                At JADSON, food production is our main business, along with
+                agricultural assistance and/or consulting services that meet the
+                demands of our clients.
+              </p>
+              <button class='contacth1'>Explore</button>
+            </div>
+          </div>
+          <div class='mob-image'>
+            <img src={home} alt='' />
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 
