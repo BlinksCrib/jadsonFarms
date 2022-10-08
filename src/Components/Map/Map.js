@@ -1,22 +1,13 @@
 import React, { useEffect } from 'react'
 import "./Map.css"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 const Map = () => {
 
-
-  useEffect(() => {
-    AOS.init()
-  }, [])
 
   
   return (
     <div
       className='preant-cont'
-      data-aos='fade-right'
-      data-aos-offset='300'
-      data-aos-easing='ease-in-sine'
     >
       <div className='sub-map-cont'>
         <div className='map-cont'>

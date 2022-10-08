@@ -14,7 +14,7 @@ span {
   text-align: center;
   color: #333333;
 }
-.pacc{
+.pacc {
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
@@ -38,7 +38,7 @@ span {
   padding-bottom: 20px;
   color: #333333;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .pacc {
     flex-direction: column;
     width: 100%;

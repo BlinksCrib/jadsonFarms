@@ -3,8 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0 2rem 0;
-  background-color: var(--pry-green-color);
+  padding: 2rem 0 2rem 0 !important;
+  background-color: var(--pry-green-color);overflow-x: hidden;
 }
 .feedmill-cont {
   width: 90%;

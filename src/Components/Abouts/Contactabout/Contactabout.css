@@ -39,7 +39,7 @@ span {
   padding-bottom: 20px;
   color: var(--pry-white-color);
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .pac {
     flex-direction: column;
     width: 100%;

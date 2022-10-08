@@ -29,299 +29,290 @@
 }
 } */
 
-
 /* about css */
 
-
-
-.all{
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
+.all {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.all-pad{
-    width: 30%;
-    color: var(--main-color);
+.all-pad {
+  width: 30%;
+  color: var(--main-color);
 }
-.agriculture h1{
-    font-size: 40px;
-    line-height: 1.3em;
-    padding-bottom: 10px;
-    font-weight: var(--font-large);
+.agriculture h1 {
+  font-size: 40px;
+  line-height: 1.3em;
+  padding-bottom: 10px;
+  font-weight: var(--font-large);
 }
-span{
-    color: var(--span-color);
+span {
+  color: var(--span-color);
 }
-.mob{
-    display: none;
- }
-.mob1{
-    color: var(--main-color);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
- }
- .mob h1{
-    font-size: 40px;
-    line-height: 1.3em;
-    padding-bottom: 10px;
-    font-weight: var(--font-large);
+.mob {
+  display: none;
 }
-.pade{
-    background-color: var(--back);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem 0;
+.mob1 {
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.contact1{
-    width: 100%;
-    background-color: var(--contact-back);
-    text-decoration: none;
-    border: none;
-    color: var(--main-color);
-    padding:20px 47px;
-    font-size:18px ;
+.mob h1 {
+  font-size: 40px;
+  line-height: 1.3em;
+  padding-bottom: 10px;
+  font-weight: var(--font-large);
 }
-.mob-image{
-    width: 100%;
+.pade {
+  background-color: var(--back);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
 }
-.mob-image img{
-    width: 100%;
+.contact1 {
+  width: 100%;
+  background-color: var(--contact-back);
+  text-decoration: none;
+  border: none;
+  color: var(--main-color);
+  padding: 20px 47px;
+  font-size: 18px;
 }
-.about-us{
-    width: 100%;
-    background-color: var(--main-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
+.mob-image {
+  width: 100%;
 }
-.pad{
-    width: 90%;
+.mob-image img {
+  width: 100%;
 }
-.do{
-    margin-bottom: 3rem;
+.about-us {
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
 }
-.hor-line{
-    width: 27%;
-    height: 3px;
-    background-color: var(--contact-back);
+.pad {
+  width: 90%;
 }
-.agro-business{
-    margin-bottom: 2rem;
-    width: 100%;
+.do {
+  margin-bottom: 3rem;
+}
+.hor-line {
+  width: 27%;
+  height: 3px;
+  background-color: var(--contact-back);
+}
+.agro-business {
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
-.agro-business-image{
-    width: 100%;
+.agro-business-image {
+  width: 100%;
 }
-.agrobusiness-image img{
-    width: 100%;
+.agrobusiness-image img {
+  width: 100%;
 }
-.farm-support{
-    width: 100%;
+.farm-support {
+  width: 100%;
 }
-.more{
-    display: flex;
-    justify-content: flex-end;
+.more {
+  display: flex;
+  justify-content: flex-end;
 }
-.mor{
-    display: flex;
-    flex-direction: column;
-    text-align: right;
-    align-items: flex-end;
-    width: 100%;
-} 
-.horr-line{
-    width: 30%;
-    height: 3px;
-    background-color: var(--contact-back);
+.mor {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+  width: 100%;
+}
+.horr-line {
+  width: 30%;
+  height: 3px;
+  background-color: var(--contact-back);
 }
 .consultancy {
-    margin-top: 3rem;
-    min-height: 100vh;
-    width: 100%;
-    /* background-image: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0.67053) 53.65%, rgba(0, 0, 0, 0.310681) 60.94%, rgba(0, 0, 0, 0) 77.6%), url(./images/Rectangle\ 59.png); */
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    /* color:var(--); */
+  margin-top: 3rem;
+  min-height: 100vh;
+  width: 100%;
+  /* background-image: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0.67053) 53.65%, rgba(0, 0, 0, 0.310681) 60.94%, rgba(0, 0, 0, 0) 77.6%), url(./images/Rectangle\ 59.png); */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  /* color:var(--); */
 }
-.pat{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-right: 3rem;
-    width: 30%;
+.pat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 3rem;
+  width: 30%;
 }
-.consultancy h1{
-    color:var(--main-color);
+.consultancy h1 {
+  color: var(--main-color);
 }
-.consultancy p{
-    color: var(--main-color);
+.consultancy p {
+  color: var(--main-color);
 }
-.contact-us{
-    border: 2px solid var(--main-color);
-     text-decoration: none;
-     background-color: transparent;
-     color: var(--main-color);
-    padding:14px 20px;
-    width: 50%;
-    font-size:18px ;
-    margin-top: 2rem;
-
+.contact-us {
+  border: 2px solid var(--main-color);
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--main-color);
+  padding: 14px 20px;
+  width: 50%;
+  font-size: 18px;
+  margin-top: 2rem;
 }
-.consultancy1{
-    display: none;
-    background-color: black;
-    padding: 3rem 0;
+.consultancy1 {
+  display: none;
+  background-color: black;
+  padding: 3rem 0;
 }
-.pact{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.pact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.consultancy1 h1{
-    color: var(--main-color);
-    font-size: 36px;
-    padding-bottom: 7px;
+.consultancy1 h1 {
+  color: var(--main-color);
+  font-size: 36px;
+  padding-bottom: 7px;
 }
-.consultancy1 p{
-    color: var(--main-color);
-    font-size: 18px;
-    line-height: 1.3em;
-}
-
-.contact-us1{
-    border: 2px solid var(--main-color);
-     text-decoration: none;
-     background-color: transparent;
-     color: var(--main-color);
-    padding:14px 20px;
-    width: 100%;
-    font-size:18px ;
-    margin-top: 2rem;
-
-}
-.contact h1{
-    text-align: center;
-}
-.pac{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
+.consultancy1 p {
+  color: var(--main-color);
+  font-size: 18px;
+  line-height: 1.3em;
 }
 
-.contact-menu p{
-  padding-bottom:10px;
+.contact-us1 {
+  border: 2px solid var(--main-color);
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--main-color);
+  padding: 14px 20px;
+  width: 100%;
+  font-size: 18px;
+  margin-top: 2rem;
+}
+.contact h1 {
+  text-align: center;
+}
+.pac {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.contact-menu p {
+  padding-bottom: 10px;
   line-height: 1.3em;
   font-size: 18px;
 }
-.past{
-    width: 90%;
-    margin: 50px 0;
-    /* height: 70%; */
-    
+.past {
+  width: 90%;
+  margin: 50px 0;
+  /* height: 70%; */
 }
-.past img{
-    width: 100%;
+.past img {
+  width: 100%;
 }
-.par{
-    width: 100%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.par {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.paf{
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 40px;
+.paf {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
 }
-.part-image{
-    display: flex;
-    align-items: center;
+.part-image {
+  display: flex;
+  align-items: center;
 }
-.circle{
-    font-size: 40px;
-    padding-right: 5px;
+.circle {
+  font-size: 40px;
+  padding-right: 5px;
 }
 
-@media screen and (max-width:1000px) {
-    .agriculture{
-        display: none;
-    }
-    .do{
-        width: 100%;
-
-    }
-    .mob{
-        display: block;
-        width: 100%;
-     }
-    .hor-line{
-        width: 100%;
-    }
-    .farm-support{
-        /* flex-direction: column-reverse; */
-        width: 100%;
-    }
-    .farm-support-image{
-        width: 100%;
-    }
-    .farm-support-image img{
-        width: 100%;
-    }
-    
-    .agro-business{
-        width: 100%;
-    }
-    .agro-business-image{
-        width: 100%;
-    }
-    .agro-business-image img{
-        width: 100%;
-    }
-    .animal-manure-text{
-        width: 100%;
-    }
-    .horr-line{
-        width: 100%;
-    }
-
-    .consultancy{
-        display: none;
-    }
-    .consultancy1{
-        display: block;
-    }
-    .pac{
-        flex-direction: column;
-        width: 100%;
-    }
-    .back{
-        margin-bottom: 30px;
-        padding:30px 0 30px 25px;
-    }
-    .par{
-        display: none;
-    }
-    .par1{
-        display: block;
-    }
-    .pak{
-        width: 90%;
-        flex-direction: column;
-        
-    }
-    .pak p{
-        padding-bottom: 10px;
-    }
+@media screen and (max-width: 992px) {
+  .agriculture {
+    display: none;
   }
+  .do {
+    width: 100%;
+  }
+  .mob {
+    display: block;
+    width: 100%;
+  }
+  .hor-line {
+    width: 100%;
+  }
+  .farm-support {
+    /* flex-direction: column-reverse; */
+    width: 100%;
+  }
+  .farm-support-image {
+    width: 100%;
+  }
+  .farm-support-image img {
+    width: 100%;
+  }
+
+  .agro-business {
+    width: 100%;
+  }
+  .agro-business-image {
+    width: 100%;
+  }
+  .agro-business-image img {
+    width: 100%;
+  }
+  .animal-manure-text {
+    width: 100%;
+  }
+  .horr-line {
+    width: 100%;
+  }
+
+  .consultancy {
+    display: none;
+  }
+  .consultancy1 {
+    display: block;
+  }
+  .pac {
+    flex-direction: column;
+    width: 100%;
+  }
+  .back {
+    margin-bottom: 30px;
+    padding: 30px 0 30px 25px;
+  }
+  .par {
+    display: none;
+  }
+  .par1 {
+    display: block;
+  }
+  .pak {
+    width: 90%;
+    flex-direction: column;
+  }
+  .pak p {
+    padding-bottom: 10px;
+  }
+}

@@ -39,7 +39,7 @@
   object-fit: cover;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   .mining {
     flex-direction: column-reverse;
     width: 100%;

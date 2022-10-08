@@ -1,123 +1,126 @@
-
 .support {
-    height: calc(100vh - 10vh);
-    width: 100%;
-    background-image: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.47053) 53.65%, rgba(0, 0, 0, 0.310681) 60.94%, rgba(0, 0, 0, 0) 77.6%), url(../../../assets/service.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
+  height: calc(100vh - 10vh);
+  width: 100%;
+  background-image: linear-gradient(
+      90deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.47053) 53.65%,
+      rgba(0, 0, 0, 0.310681) 60.94%,
+      rgba(0, 0, 0, 0) 77.6%
+    ),
+    url(../../../assets/service.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
 }
 
-
-.all{
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
+.all {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.all-pad{
-    width: 30%;
-    color: var(--pry-white-color);
+.all-pad {
+  width: 30%;
+  color: var(--pry-white-color);
 }
-.support h1{
-    font-size: 40px;
-    line-height: 1.3em;
-    padding-bottom: 10px;
-    font-weight: var(--font-large);
+.support h1 {
+  font-size: 40px;
+  line-height: 1.3em;
+  padding-bottom: 10px;
+  font-weight: var(--font-large);
 }
-.first{
-    color: var(--span-color);
+.first {
+  color: var(--span-color);
 }
-.support p{
-    font-size: 18px;
-    line-height: 1.3em;
-    padding-bottom: 10px;
+.support p {
+  font-size: 18px;
+  line-height: 1.3em;
+  padding-bottom: 10px;
 }
-.contacts{
-    background-color: var(--contact-back);
-    text-decoration: none;
-    border: none;
-    color: var(--pry-white-color);
-    padding:14px 47px;
-    font-size:18px ;
+.contacts {
+  background-color: var(--contact-back);
+  text-decoration: none;
+  border: none;
+  color: var(--pry-white-color);
+  padding: 14px 47px;
+  font-size: 18px;
 }
-.mob{
-   display: none;
+.mob {
+  display: none;
 }
-.mob1{
-    color: var(--pry-white-color) !important;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+.mob1 {
+  color: var(--pry-white-color) !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.mob1 h1{
-    color: var(--pry-white-color) !important;
+.mob1 h1 {
+  color: var(--pry-white-color) !important;
 }
-.mob1 p{
-    color: var(--pry-white-color) !important;
+.mob1 p {
+  color: var(--pry-white-color) !important;
 }
-.pade{
-    background-color: var(--back);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3rem 0;
+.pade {
+  background-color: var(--back);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
 }
-.contacts1{
-    width: 100%;
-    background-color: var(--contact-back);
-    text-decoration: none;
-    border: none;
-    color: var(--main-color);
-    padding:20px 47px;
-    font-size:18px ;
+.contacts1 {
+  width: 100%;
+  background-color: var(--contact-back);
+  text-decoration: none;
+  border: none;
+  color: var(--main-color);
+  padding: 20px 47px;
+  font-size: 18px;
 }
-.mob h1{
-    font-size: 40px;
-    line-height: 1.3em;
-    padding-bottom: 10px;
-    font-weight: var(--font-large);
+.mob h1 {
+  font-size: 40px;
+  line-height: 1.3em;
+  padding-bottom: 10px;
+  font-weight: var(--font-large);
 }
-.first{
-    color: var(--span-color);
+.first {
+  color: var(--span-color);
 }
-.mob p{
-    font-size: 18px;
-    line-height: 1.3em;
-    padding-bottom: 10px;
+.mob p {
+  font-size: 18px;
+  line-height: 1.3em;
+  padding-bottom: 10px;
 }
-.mob-image{
-    width: 100%;
+.mob-image {
+  width: 100%;
 }
-.mob-image img{
-    width: 100%;
+.mob-image img {
+  width: 100%;
 }
-.do{
-    margin-bottom: 3rem;
+.do {
+  margin-bottom: 3rem;
 }
-.hor-line{
-    width: 27%;
-    height: 3px;
-    background-color: var(--contact-back);
+.hor-line {
+  width: 27%;
+  height: 3px;
+  background-color: var(--contact-back);
 }
 
-@media (max-width:1000px) {
-    .support{
-        display: none;
-    }
-    .do{
-        width: 100%;
-
-    }
-    .mob{
-        display: block;
-        width: 100%;
-     }
-    .hor-line{
-        width: 100%;
-    }
+@media (max-width: 992px) {
+  .support {
+    display: none;
+  }
+  .do {
+    width: 100%;
+  }
+  .mob {
+    display: block;
+    width: 100%;
+  }
+  .hor-line {
+    width: 100%;
+  }
 }

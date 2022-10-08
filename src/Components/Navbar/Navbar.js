@@ -7,6 +7,24 @@ const Navbar = () => {
   const navRef = useRef(null);
  const [toggle, setToggle] = useState(false);
 
+ let activeStyle = {
+   padding: '0px 0px 3px 0px',
+   textDecoration: '2px solid underline',
+   transition: '1s ease-in-out',
+   fontWeight: '900 !important',
+ }
+ let activeStyles = {
+   padding: '0px 0px 3px 0px',
+   textDecoration: '2px solid underline',
+   transition: '1s ease-in-out',
+   fontWeight: '900 !important',
+ }
+ const [isActive, setActive] = useState('false')
+
+ const handleToggle = () => {
+   setActive(!isActive)
+ }
+
 
   const openNav = () => {
     setToggle(true)
@@ -40,24 +58,40 @@ const Navbar = () => {
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav me-auto mb-2 mb-lg-0 ml-auto w-100'>
               <li className='nav-item'>
-                <Link className='nav-link' to='/'>
+                <NavLink
+                  className='nav-link'
+                  to='/'
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   Home
-                </Link>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <Link className='nav-link' to='/service'>
+                <NavLink
+                  className='nav-link'
+                  to='/service'
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   Services
-                </Link>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <Link className='nav-link' to='/about'>
+                <NavLink
+                  className='nav-link'
+                  to='/about'
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   About us
-                </Link>
+                </NavLink>
               </li>
               <li className='nav-item'>
-                <Link className='nav-link' to='/contact'>
+                <NavLink
+                  className='nav-link'
+                  to='/contact'
+                  style={({ isActive }) => (isActive ? activeStyle : undefined)}
+                >
                   Contact us
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -70,7 +104,7 @@ const Navbar = () => {
         </Link>{' '}
         <br />
         <Link to='/service' onClick={closeNav}>
-         Services
+          Services
         </Link>{' '}
         <br />
         <Link to='/about' onClick={closeNav}>

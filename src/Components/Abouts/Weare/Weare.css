@@ -1,52 +1,51 @@
 /* about css */
 
-span{
-    color: var(--span-color);
+span {
+  color: var(--span-color);
 }
-.about-us{
-    width: 100%;
-    background-color: var(--main-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem 0;
+.about-us {
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
 }
-.pad{
-    width: 90%;
+.pad {
+  width: 90%;
 }
-.do{
-    margin-bottom: 3rem;
+.do {
+  margin-bottom: 3rem;
 }
-.hor-line{
-    width: 27%;
-    height: 3px;
-    background-color: var(--contact-back);
+.hor-line {
+  width: 27%;
+  height: 3px;
+  background-color: var(--contact-back);
 }
-.agro-business{
-    margin-bottom: 2rem;
-    width: 100%;
-}
-
-.agro-business-image{
-    width: 100%;
-}
-.agrobusiness-image img{
-    width: 100%;
+.agro-business {
+  margin-bottom: 2rem;
+  width: 100%;
 }
 
-@media screen and (max-width:1000px) {
-    .hor-line{
-        width: 100%;
-    }
-    
-    .agro-business{
-        width: 100%;
-    }
-    .agro-business-image{
-        width: 100%;
-    }
-    .agro-business-image img{
-        width: 100%;
-    }
+.agro-business-image {
+  width: 100%;
+}
+.agro-business-image img {
+  width: 100%;
+}
 
+@media screen and (max-width: 992px) {
+  .hor-line {
+    width: 100%;
   }
+
+  .agro-business {
+    width: 100%;
+  }
+  .agro-business-image {
+    width: 100%;
+  }
+  .agro-business-image img {
+    width: 100%;
+  }
+}

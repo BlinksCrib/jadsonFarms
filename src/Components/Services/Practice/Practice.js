@@ -10,10 +10,14 @@ const Practice = () => {
     <section class='about-us'>
       <div className='pad'>
         <div class='animal-manure'>
-          <div class='animal-manure-image'>
+          <div
+            class='animal-manure-image'
+          >
             <img src={smallsmile} alt='' />
           </div>
-          <div class='animal-manure-text'>
+          <div
+            class='animal-manure-text'
+          >
             <h1>Best-practice Animal Manure Processing</h1>
             <p>
               Farmyard waste can be processed and recycled to the farm as an

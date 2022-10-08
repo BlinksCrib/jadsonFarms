@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Foot.css'
 
 
@@ -7,8 +8,12 @@ const Foot = () => {
     <section>
       <footer className='foot'>
         <div class='parf'>
-          <div class='paff'>
-            <div class='partf'>
+          <div
+            class='paff'
+          >
+            <div
+              class='partf'
+            >
               <div class='part-imagef'>
                 <i class='fa-solid fa-circle circle'></i>
                 <p>
@@ -19,16 +24,28 @@ const Foot = () => {
                 JADSON INTEGRATED FARMS & SERVICES LTD.
               </h1>
             </div>
-            <div class='partf'>
+            <div
+              class='partf'
+            >
               <h1>LINKS</h1>
               <ul>
-                <li>Home</li>
-                <li>Services</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
+                <Link to='/'>
+                  <li>Home</li>
+                </Link>
+                <Link to='/service'>
+                  <li>Services</li>
+                </Link>
+                <Link to='/about'>
+                  <li>About Us</li>
+                </Link>
+                <Link to='/contact'>
+                  <li>Contact Us</li>
+                </Link>
               </ul>
             </div>
-            <div class='partf'>
+            <div
+              class='partf'
+            >
               <button class='contac-usf'>Contact Us</button>
 
               <div class='socialsf'>
@@ -46,8 +63,12 @@ const Foot = () => {
           </div>
         </div>
         <div class='par1f'>
-          <div class='paf1f'>
-            <div class='pad'>
+          <div
+            class='paf1f'
+          >
+            <div
+              class='pad'
+            >
               <button class='contac-usf'>Contact Us</button>
               <div class='socialsf'>
                 <div class='iconf'>
@@ -60,20 +81,32 @@ const Foot = () => {
                   <i class='fab fa-youtube'></i>
                 </div>
               </div>
-              <div class='part-imagef'>
+              <div
+                class='part-imagef'
+              >
                 <i class='fa-solid fa-circle circlef'></i>
                 <p>
                   Jadson <br /> Integrated Farms & Services{' '}
                 </p>
               </div>
               <h1>JADSON INTEGRATED FARMS & SERVICES LTD.</h1>
-              <div class='linksf'>
+              <div
+                class='linksf'
+              >
                 <h1>LINKS</h1>
                 <ul>
-                  <li>Home</li>
-                  <li>Services</li>
-                  <li>About Us</li>
-                  <li>Contact Us</li>
+                  <Link to='/'>
+                    <li>Home</li>
+                  </Link>
+                  <Link to='/service'>
+                    <li>Services</li>
+                  </Link>
+                  <Link to='/about'>
+                    <li>About Us</li>
+                  </Link>
+                  <Link to='/contact'>
+                    <li>Contact Us</li>
+                  </Link>
                 </ul>
               </div>
             </div>

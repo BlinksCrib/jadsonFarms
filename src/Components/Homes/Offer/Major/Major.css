@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem 0 2rem 0;
+  margin: 4rem 0 2rem 0 !important;
 }
 .sub_major-cont {
   width: 90%;

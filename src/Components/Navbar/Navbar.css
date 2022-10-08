@@ -31,6 +31,9 @@
   color: var(--pry-green-color) !important;
   height: 10vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container{
   width: 90% !important;
@@ -71,7 +74,6 @@
 
 
 .nav-link {
-  font-family: "Signika", sans-serif;
   font-size: 16px;
   font-weight: 600;
   line-height: 32px;
@@ -99,10 +101,9 @@
   right: 0;
   background: var(--pry-white-color);
   /* Black*/
-  overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 60px;
-  margin-top: 56px;
+  padding-top: 60px !important;
+  margin-top: 56px !important;
   /* Place content 60px from the top */
   transition: 1s ease;
   /* 0.5 second transition effect to slide in the sidebar */
@@ -110,7 +111,6 @@
 
 /* The sidebar links */
 .sidebar a {
-  font-family: "Signika", sans-serif;
   font-size: 16px;
   font-style: normal;
 white-space: nowrap;

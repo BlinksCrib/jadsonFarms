@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Formbox.css'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 
 const Formbox = () => {
@@ -10,9 +8,6 @@ const Formbox = () => {
     const [body, setBody] = useState("")
     const [sendername, setSendername] = useState("")
 
-     useEffect(() => {
-       AOS.init()
-     }, [])
 
 const onTop = (e) => {
   e.preventDefault()
@@ -56,7 +51,6 @@ const onTop = (e) => {
               placeholder='Can we know your Fullname...'
               required
               autoComplete='on'
-              data-aos='fade-up-right'
             />
           </div>
           <div class='name'>
@@ -69,7 +63,6 @@ const onTop = (e) => {
               placeholder='Your email address*'
               required
               autoComplete='on'
-              data-aos='fade-up-left'
             />
           </div>
           <div class='write'>
@@ -82,7 +75,6 @@ const onTop = (e) => {
               rows='10'
               placeholder='Write your message to us here...'
               required
-              data-aos='fade-down-left'
             ></textarea>
           </div>
         </form>
@@ -90,7 +82,6 @@ const onTop = (e) => {
           <button
             type='submit'
             class='contactus'
-            data-aos='fade-down-right'
             onClick={(e) => onTop(e)}
           >
             Contact Us
