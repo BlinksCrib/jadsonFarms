@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './About.css'
 
 const About = () => {
@@ -21,7 +21,7 @@ const About = () => {
       </section>
       <section class='mob'>
         <div class='mob1'>
-          <div class='pade'>
+          <div class='padea'>
             <div class='pad'>
               <h1>
                 When It is
@@ -29,16 +29,16 @@ const About = () => {
                 You are at
                 <span> the right place</span>
               </h1>
-              <NavLink
+              <Link
                 to='/contact'
               >
-              <button class='contact1'>Contact Us</button>
-              </NavLink>
+               <button class='contact1'>Contact Us</button>
+              </Link>
             </div>
           </div>
-          <div class='mob-image'>
+          {/* <div class='mob-image'>
             <img src='./images/Rectangle 82 (1).png' alt='' />
-          </div>
+          </div> */}
         </div>
       </section>
     </>

@@ -12,7 +12,7 @@
 .mining h1 {
   font-size: 36px;
   color: var(--pry-green-color) !important;
-  padding-bottom: 7px;
+  padding-bottom: 7px !important;
 }
 .mining p {
   color: var(--other-text-color);
@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 .mining-text {
   width: 48%;

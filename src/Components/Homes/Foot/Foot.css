@@ -1,11 +1,11 @@
-
 /* new sytle */
 
 .foot {
   width: 100%;
   background-color: var(--pry-white-color);
   color: var(--pry-green-color) !important;
-  padding: 40px 0;
+  padding: 10px 0 !important;
+  padding: 4rem 0px !important;
 }
 .parf {
   width: 100%;
@@ -17,10 +17,10 @@
   width: 90%;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 40px;
+  padding-bottom: 40px !important;
 }
-.partf{
-    width: calc(100% / 3);
+.partf {
+  width: calc(100% / 3);
 }
 .partf h1 {
   color: var(--pry-green-color) !important;
@@ -35,15 +35,15 @@
 }
 .circlef {
   font-size: 40px;
-  padding-right: 5px;
+  padding-right: 5px !important;
 }
 .foot ul li {
   list-style: none;
   color: var(--pry-green-color) !important;
   opacity: 76%;
-  padding-top: 10px;
+  padding-top: 10px !important;
 }
-.foot ul{
+.foot ul {
   padding-left: 0 !important;
   text-align: left;
 }
@@ -59,7 +59,7 @@
 .socialsf {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0;
+  padding: 20px 0 !important;
 }
 .iconf {
   width: 40px;
@@ -81,7 +81,6 @@
   width: 70%;
   display: flex;
   justify-content: space-around;
-  padding-bottom: 30px;
 }
 .par1f {
   display: none;
@@ -101,7 +100,6 @@
   width: 70%;
   display: flex;
   justify-content: space-around;
-  padding-bottom: 30px;
 }
 .pakf p {
   font-size: 18px;
@@ -110,13 +108,13 @@
   padding: 20px 0 !important;
   text-align: left;
 }
-.linksf ul{
-    padding-left: 0 !important;
+.linksf ul {
+  padding-left: 0 !important;
 }
 @media (max-width: 992px) {
-    .paf1f h1{
-             color: var(--pry-green-color) !important;
-    }
+  .paf1f h1 {
+    color: var(--pry-green-color) !important;
+  }
   .expectf {
     display: none;
   }

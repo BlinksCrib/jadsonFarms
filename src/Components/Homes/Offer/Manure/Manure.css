@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 0 2rem 0;
+  padding: 2rem 0 2rem 0 !important;
 }
 .manure-cont {
   width: 90%;
@@ -11,33 +11,80 @@
   justify-content: space-between;
   align-items: center;
 }
+.manure-cont h4{
+  color: var(--pry-white-color);
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.2;
+}
 .manure1 {
-  background-image: url(../../../../assets/cow.png);
+  background-image: linear-gradient(
+      360deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.47053) 25.65%,
+      rgba(0, 0, 0, 0.310681) 30.94%,
+      rgba(0, 0, 0, 0) 77.6%
+    ), url(../../../../assets/cow.png);
   width: 30%;
   height: 65vh;
   object-fit: cover;
   /* background-position: center; */
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
 }
 .manure2 {
-  background-image: url(../../../../assets/hen.png);
+  background-image: linear-gradient(
+      360deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.47053) 25.65%,
+      rgba(0, 0, 0, 0.310681) 30.94%,
+      rgba(0, 0, 0, 0) 77.6%
+    ), url(../../../../assets/hen.png);
   /* border: 5px solid red; */
   width: 30%;
   height: 65vh;
   object-fit: cover;
   /* background-position: center; */
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
 }
 .manure3 {
-  background-image: url(../../../../assets/pig.png);
+  background-image: linear-gradient(
+      360deg,
+      #000000 0%,
+      rgba(0, 0, 0, 0.47053) 25.65%,
+      rgba(0, 0, 0, 0.310681) 30.94%,
+      rgba(0, 0, 0, 0) 77.6%
+    ), url(../../../../assets/pig.png);
   width: 30%;
   height: 65vh;
   object-fit: cover;
   /* background-position: center; */
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+.manure-but {
+  border: 2px solid var(--pry-white-color);
+  text-decoration: none;
+  background-color: transparent;
+  color: var(--pry-white-color);
+  padding: 12px 20px;
+  /* width: 50%; */
+  font-size: 18px;
+  margin-top: 1.2rem !important;
+  margin-bottom: 25px;
 }
 @media screen and (max-width: 992px) {
   .manure-cont {
@@ -47,5 +94,6 @@
   .manure2,
   .manure3 {
     width: 100%;
+    margin-bottom: 2rem;
   }
 }

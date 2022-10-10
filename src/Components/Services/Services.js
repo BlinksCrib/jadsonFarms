@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
+import Consultancy from '../Abouts/Consultancy/Consultancy'
 import Footer from '../Footer/Footer'
+import Also from './Also/Also'
 import MoreLivestock from './MoreLivestock/MoreLivestock'
 import Practice from './Practice/Practice'
 import Quality from './Quality/Quality'
@@ -22,6 +24,8 @@ const Services = () => {
         <MoreLivestock />
         <Quality />
         <Practice />
+        <Also />
+        <Consultancy />
         <Footer />
     </div>
   )

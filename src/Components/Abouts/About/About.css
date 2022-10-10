@@ -13,7 +13,6 @@
   background-size: cover;
   display: flex;
   justify-content: center;
-  margin-top: 10vh;
 }
 
 .all {
@@ -57,14 +56,16 @@ span {
   padding-bottom: 10px;
   font-weight: var(--font-large);
 }
-.pade {
-  background-color: var(--back);
+.padea {
+  /* background-color: var(--back); */
   height: calc(100vh - 10vh);
-  width: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.9), rgba(4,9,30,0.9)), url(../../../assets/smile.png);
+    background-position: center;
+    background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
 }
 .contact1 {
   width: 100%;

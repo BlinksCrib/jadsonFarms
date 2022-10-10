@@ -19,16 +19,16 @@ const Contact = () => {
 
       <section class='mob'>
         <div class='mob1'>
-          <div class='pade'>
+          <div class='padec'>
             <div class='pad'>
               <h1>We expect to hear from You</h1>
               <button class='contact1'>Contact Us
               </button>
             </div>
           </div>
-          <div class='mob-image'>
+          {/* <div class='mob-image'>
             <img src={contact} alt='' />
-          </div>
+          </div> */}
         </div>
       </section>
     </>

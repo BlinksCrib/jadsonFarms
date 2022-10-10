@@ -23,6 +23,18 @@
   height: 100%;
   object-fit: cover;
 }
+.major1{
+  max-width: 50%;
+}
+.major1  h1{
+  font-size: 3rem;
+}
+.major1  p{
+  font-size: 1.4rem;
+}
+.major1  h1 span{
+  color: var(--pry-green-color);
+}
 .major-img2 {
   width: 30%;
   height: 100%;
@@ -35,4 +47,31 @@
   .major-img1 {
     width: 100%;
   }
+  .major1{
+  max-width: 80%;
+}
+}
+@media screen and (max-width: 780px) {
+  .major1{
+  max-width: 100%;
+}
+.major1  h1{
+  font-size: 2rem;
+}
+.major1  p{
+  font-size: 1.2rem;
+}
+}
+@media screen and (max-width: 550px) {
+.major1  p{
+  font-size: 1rem;
+}
+}
+@media screen and (max-width: 410px) {
+.major1  p{
+  font-size: 0.8rem;
+}
+.major1  h1{
+  font-size: 1.45rem;
+}
 }

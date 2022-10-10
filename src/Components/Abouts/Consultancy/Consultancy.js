@@ -1,18 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Consultancy.css'
 
 
 const Consultancy = ({title}) => {
   return (
     <>
-      <section class='about-us'>
+      <section class='about-us' style={{ padding: '0.6rem 0px' }}>
         <div class='pad'>
-          <div class='more'>
-            <div class='mor'>
-              <h1>{title}</h1>
-              <div class='horr-line'></div>
-            </div>
-          </div>
           <div class='consultancy'>
             <div class='pat'>
               <h1>We offer Tested and Trusted Farm Consultancy</h1>
@@ -21,12 +16,14 @@ const Consultancy = ({title}) => {
                 Consultancy Services through tested and trusted services and
                 systems for the continual growth of agriculture industry.
               </p>
-              <button class='contact-us'>Contact Us</button>
+              <Link to='/contact'>
+                <button class='contact-us'>Contact us</button>
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      <section class='consult'>
+      <section class='consult' style={{ marginBottom: '4rem' }}>
         <div class='consultancy1'>
           <div class='pact'>
             <div class='pad'>
@@ -36,7 +33,9 @@ const Consultancy = ({title}) => {
                 Services through tested and trusted services and systems for the
                 continual growth of agriculture industry.
               </p>
-              <button class='contact-us1'>Contact Us</button>
+              <Link to='/contact'>
+                <button class='contact-us1'>Contact us</button>
+              </Link>
             </div>
           </div>
         </div>

@@ -17,6 +17,13 @@
 .farm-support img{
   width: 100%;
 }
+.farm-support h1 {
+  color: var(--pry-green-color) !important;
+  font-size: 36px;
+}
+.farm-support p {
+  font-size: 18px;
+}
 .sub_support-cont h1 {
   color: var(--pry-green-color);
   text-decoration: underline;

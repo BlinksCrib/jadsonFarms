@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import Consultancy from '../Abouts/Consultancy/Consultancy'
 import Contactabout from '../Abouts/Contactabout/Contactabout'
+import Dear from './Dear/Dear'
 import Foot from './Foot/Foot'
 import Home from './Home/Home'
 import Offer from './Offer/Offer'
@@ -17,9 +18,10 @@ const All = () => {
   }, [routepath])
   
   return (
-    <div style={{marginTop: "10vh"}}>
+    <div style={{ marginTop: '10vh!important' }}>
       <Home />
       <Offer />
+      <Dear />
       <Consultancy />
       <Contactabout />
       <Foot />

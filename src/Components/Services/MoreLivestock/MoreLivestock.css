@@ -11,11 +11,11 @@
 }
 .do h1 {
   font-size: 36px;
-  color: var(--pry-green-color);
+  color: var(--pry-green-color) !important;
   padding-bottom: 4px;
 }
 .do p {
-  color: var(--other-text-color);
+  color: var(--other-text-color) !important;
   font-size: 18px;
   line-height: 1.3em;
 }
@@ -36,6 +36,13 @@
 }
 .livestock-text {
   width: 50%;
+}
+.livestock-text h1 {
+  color: var(--pry-green-color) !important;
+  font-size: 36px;
+}
+.livestock-text p {
+  font-size: 18px;
 }
 
 .hor-line {

@@ -1,11 +1,11 @@
-
 /* new sytle */
 
 footer {
   width: 100%;
   background-color: var(--pry-green-color);
   color: var(--pry-white-color) !important;
-  padding: 40px 0;
+  padding: 10px 0;
+  padding: 4rem 0px !important;
 }
 .par {
   width: 100%;
@@ -19,8 +19,8 @@ footer {
   justify-content: space-between;
   padding-bottom: 40px;
 }
-.part{
-    width: calc(100% / 3);
+.part {
+  width: calc(100% / 3);
 }
 .part h1 {
   color: var(--pry-white-color) !important;
@@ -43,7 +43,7 @@ footer ul li {
   opacity: 76%;
   padding-top: 10px;
 }
-footer ul{
+footer ul {
   padding-left: 0 !important;
   text-align: left;
 }
@@ -81,7 +81,6 @@ footer ul{
   width: 70%;
   display: flex;
   justify-content: space-around;
-  padding-bottom: 30px;
 }
 .par1 {
   display: none;
@@ -101,7 +100,6 @@ footer ul{
   width: 70%;
   display: flex;
   justify-content: space-around;
-  padding-bottom: 30px;
 }
 .pak p {
   font-size: 18px;
@@ -110,13 +108,13 @@ footer ul{
   padding: 20px 0 !important;
   text-align: left;
 }
-.links ul{
-    padding-left: 0 !important;
+.links ul {
+  padding-left: 0 !important;
 }
 @media (max-width: 992px) {
-    .paf1 h1{
-            color: var(--pry-white-color) !important;
-    }
+  .paf1 h1 {
+    color: var(--pry-white-color) !important;
+  }
   .expect {
     display: none;
   }
@@ -130,10 +128,6 @@ footer ul{
   .pac {
     flex-direction: column;
     width: 100%;
-  }
-  .back {
-    margin-bottom: 30px;
-    padding: 30px 0 30px 25px;
   }
   .pas {
     width: 90%;
@@ -151,10 +145,12 @@ footer ul{
     display: block;
   }
   .pak {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
   }
-  .pak p {
-    padding-bottom: 10px;
-  }
+}
+@media screen and  (max-width: 295px) {
+  .pak p{
+  font-size: 0.7rem !important;
+}
 }

@@ -18,6 +18,10 @@ function App() {
     //   AOS.init()
     // }, [])
 
+ if (window.location.href.includes('http://jadsonfarms.com/')) {
+     window.location.href = 'https://jadsonfarms.com/'
+   }
+
   return (
     <div className='App'>
       <>
@@ -25,10 +29,10 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/' element={<All />} />
-            {/*
+            
             <Route path='/about' element={<Abouts />} />
             <Route path='/contact' element={<Contacts />} />
-            <Route path='/service' element={<Services />} /> */}
+            <Route path='/service' element={<Services />} />
           </Routes>
         </Router>
       </>

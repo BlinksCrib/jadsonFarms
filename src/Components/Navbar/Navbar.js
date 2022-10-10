@@ -14,9 +14,12 @@ const Navbar = () => {
    fontWeight: '900 !important',
  }
  let activeStyles = {
-   padding: '0px 0px 3px 0px',
-   textDecoration: '2px solid underline',
+   padding: '10px 40px',
+   backgroundColor: "var(--pry-green-color)",
+   color: "#fff",
+   borderRadius: "5px",
    transition: '1s ease-in-out',
+   margin: "0 40px",
    fontWeight: '900 !important',
  }
  const [isActive, setActive] = useState('false')
@@ -99,21 +102,33 @@ const Navbar = () => {
       </nav>
 
       <div id='mySidebar' className='sidebar' ref={navRef}>
-        <Link to='/' onClick={closeNav}>
+        <NavLink
+          to='/'
+          onClick={closeNav}
+          style={({ isActive }) => (isActive ? activeStyles : undefined)}
+        >
           Home
-        </Link>{' '}
+        </NavLink>{' '}
         <br />
-        <Link to='/service' onClick={closeNav}>
+        <NavLink
+          to='/service'
+          onClick={closeNav}
+          style={({ isActive }) => (isActive ? activeStyles : undefined)}
+        >
           Services
-        </Link>{' '}
+        </NavLink>{' '}
         <br />
-        <Link to='/about' onClick={closeNav}>
+        <NavLink
+          to='/about'
+          onClick={closeNav}
+          style={({ isActive }) => (isActive ? activeStyles : undefined)}
+        >
           About us
-        </Link>{' '}
+        </NavLink>{' '}
         <br />
-        <Link to='/contact' onClick={closeNav}>
+        <NavLink to='/contact' onClick={closeNav} style={({ isActive }) => (isActive ? activeStyles : undefined)}>
           Contact us
-        </Link>{' '}
+        </NavLink>{' '}
         <br />
       </div>
     </div>

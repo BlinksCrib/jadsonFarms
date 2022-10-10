@@ -1,6 +1,7 @@
 import React from 'react'
 import './Home.css'
 import home from '../../../assets/home.png'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
@@ -17,7 +18,10 @@ const Home = () => {
                 agricultural assistance and/or consulting services that meet the
                 demands of our clients.
               </p>
-              <button class="contacth">Explore</button>
+              <Link to='/service'>
+                {' '}
+                <button class='contacth'>Explore</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -35,13 +39,15 @@ const Home = () => {
                 At JADSON, food production is our main business, along with
                 agricultural assistance and/or consulting services that meet the
                 demands of our clients.
-              </p>
-              <button class='contacth1'>Explore</button>
+              </p>{' '}
+              <Link to='/service'>
+                <button class='contacth1'>Explore</button>
+              </Link>
             </div>
           </div>
-          <div class='mob-image'>
+          {/* <div class='mob-image'>
             <img src={home} alt='' />
-          </div>
+          </div> */}
         </div>
       </section>
     </>

@@ -63,20 +63,23 @@
 .mob1 p {
   color: var(--pry-white-color) !important;
 }
-.pade {
-  background-color: var(--back);
-  width: 100%;
+.pades {
+  /* background-color: var(--back); */
+  height: calc(100vh - 10vh);
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.9), rgba(4,9,30,0.9)), url(../../../assets/service.png);
+    background-position: center;
+    background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
 }
 .contacts1 {
   width: 100%;
   background-color: var(--contact-back);
   text-decoration: none;
   border: none;
-  color: var(--main-color);
+  color: var(--pry-white-color);
   padding: 20px 47px;
   font-size: 18px;
 }

@@ -1,32 +1,32 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import './Foot.css'
+import { Link } from 'react-router-dom';
+import './Foot.css';
+import Jadsonbgremoved1 from '../../../assets/Jadsonbgremoved1.png'
+
 
 
 const Foot = () => {
+
+    const date = new Date().getFullYear();
+
   return (
     <section>
       <footer className='foot'>
         <div class='parf'>
-          <div
-            class='paff'
-          >
-            <div
-              class='partf'
-            >
+          <div class='paff'>
+            <div class='partf'>
               <div class='part-imagef'>
-                <i class='fa-solid fa-circle circle'></i>
-                <p>
+                <img src={Jadsonbgremoved1} alt='' />
+
+                {/* <p>
                   Jadson <b /> Integrated Farms & Services{' '}
-                </p>
+                </p> */}
               </div>
               <h1 className='reducef'>
                 JADSON INTEGRATED FARMS & SERVICES LTD.
               </h1>
             </div>
-            <div
-              class='partf'
-            >
+            <div class='partf'>
               <h1>LINKS</h1>
               <ul>
                 <Link to='/'>
@@ -43,9 +43,7 @@ const Foot = () => {
                 </Link>
               </ul>
             </div>
-            <div
-              class='partf'
-            >
+            <div class='partf'>
               <button class='contac-usf'>Contact Us</button>
 
               <div class='socialsf'>
@@ -63,12 +61,8 @@ const Foot = () => {
           </div>
         </div>
         <div class='par1f'>
-          <div
-            class='paf1f'
-          >
-            <div
-              class='pad'
-            >
+          <div class='paf1f'>
+            <div class='pad'>
               <button class='contac-usf'>Contact Us</button>
               <div class='socialsf'>
                 <div class='iconf'>
@@ -81,40 +75,15 @@ const Foot = () => {
                   <i class='fab fa-youtube'></i>
                 </div>
               </div>
-              <div
-                class='part-imagef'
-              >
-                <i class='fa-solid fa-circle circlef'></i>
-                <p>
-                  Jadson <br /> Integrated Farms & Services{' '}
-                </p>
-              </div>
-              <h1>JADSON INTEGRATED FARMS & SERVICES LTD.</h1>
-              <div
-                class='linksf'
-              >
-                <h1>LINKS</h1>
-                <ul>
-                  <Link to='/'>
-                    <li>Home</li>
-                  </Link>
-                  <Link to='/service'>
-                    <li>Services</li>
-                  </Link>
-                  <Link to='/about'>
-                    <li>About Us</li>
-                  </Link>
-                  <Link to='/contact'>
-                    <li>Contact Us</li>
-                  </Link>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
         <div class='technologyf'>
           <div class='pakf'>
-            <p>Copyright &copy; 2022 || All rights reserved</p>
+            <p style={{ paddingBottom: '0px' }}>
+              Copyright &copy; <span style={{ color: 'var(--pry-green-color)' }}>{date}</span> ||
+              All rights reserved
+            </p>
             <p>Developed by FireSwitch Technologies</p>
           </div>
         </div>

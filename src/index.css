@@ -7,15 +7,15 @@ body {
     
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
+  line-height: 1.5 !important;
   scroll-behavior: smooth;
   width: 100% !important;
 }
 
 * {
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 span {
@@ -47,4 +47,26 @@ button, a, input, textarea{
   h4 {
     line-height: 1;
   }
+}
+
+@media screen and (max-width: 780px) {
+  h1{
+  font-size: 2rem !important;
+}
+  p{
+  font-size: 1.2rem !important;
+}
+}
+@media screen and (max-width: 550px) {
+  p{
+  font-size: 1rem !important;
+}
+}
+@media screen and (max-width: 410px) {
+ p{
+  font-size: 0.8rem !important;
+}
+  h1{
+  font-size: 1.45rem !important;
+}
 }

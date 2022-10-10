@@ -14,7 +14,7 @@ span {
 .mob h1 {
   font-size: 40px;
   line-height: 1.3em;
-  padding-bottom: 10px;
+  padding-bottom: 10px !important;
   font-weight: var(--font-large);
 }
 .pade {
@@ -23,7 +23,7 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 0 !important;
 }
 .contact1 {
   width: 100%;
@@ -31,7 +31,7 @@ span {
   text-decoration: none;
   border: none;
   color: var(--main-color);
-  padding: 20px 47px;
+  padding: 20px 47px !important;
   font-size: 18px;
 }
 .hor-line {
@@ -40,7 +40,7 @@ span {
   background-color: var(--contact-back);
 }
 .agro-business {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
   width: 100%;
 }
 
@@ -55,14 +55,19 @@ span {
 }
 .more {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .mor {
   display: flex;
   flex-direction: column;
   text-align: right;
   align-items: flex-end;
-  width: 100%;
+  width: 90%;
+}
+.mor h1{
+    color: var(--pry-green-color);
 }
 .horr-line {
   width: 30%;
@@ -70,7 +75,7 @@ span {
   background-color: var(--pry-green-color);
 }
 .consultancy {
-  margin-top: 3rem;
+  margin-top: 3rem !important;
   min-height: 100vh;
   width: 100%;
   background-image: linear-gradient(
@@ -91,8 +96,8 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-right: 3rem;
-  width: 30%;
+  margin-right: 3rem !important;
+  width: 35%;
 }
 .consultancy h1 {
   color: var(--pry-white-color);
@@ -105,15 +110,15 @@ span {
   text-decoration: none;
   background-color: transparent;
   color: var(--pry-white-color);
-  padding: 14px 20px;
+  padding: 14px 20px !important;
   width: 50%;
   font-size: 18px;
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 .consultancy1 {
   display: none;
   background-color: black;
-  padding: 3rem 0;
+  padding: 3rem 0 !important;
 }
 .pact {
   width: 100%;
@@ -124,7 +129,7 @@ span {
 .consultancy1 h1 {
   color: var(--pry-white-color);
   font-size: 36px;
-  padding-bottom: 7px;
+  padding-bottom: 7px !important;
 }
 .consultancy1 p {
   color: var(--pry-white-color);
@@ -140,7 +145,7 @@ span {
   padding: 14px 20px;
   width: 100%;
   font-size: 18px;
-  margin-top: 2rem;
+  margin-top: 2rem !important;
 }
 @media (max-width: 992px) {
   .horr-line {
