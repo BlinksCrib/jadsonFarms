@@ -50,7 +50,6 @@
 }
 .mob h1 {
   font-size: 40px;
-  line-height: 1.3em;
   padding-bottom: 10px;
   font-weight: var(--font-large);
 }
@@ -74,6 +73,13 @@
   padding: 20px 47px;
   font-size: 18px;
 }
+
+.contact1:hover{
+  outline: 2px solid var(--pry-white-color);
+  outline-offset: 5px;
+  outline-style: groove;
+}
+
 .mob-image {
   width: 100%;
 }

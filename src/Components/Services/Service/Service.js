@@ -2,6 +2,7 @@ import React from 'react'
 import './Service.css'
 import service from '../../../assets/service.png'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 
 const Service = () => {
@@ -21,9 +22,14 @@ const Service = () => {
                 agricultural assistance and/or consulting services that meet the
                 demands of our clients.
               </p>
-              <Link to='/contact'>
+              <HashLink
+                to={'/contact/#cop'}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              >
                 <button class='contacts'>Contact us</button>
-              </Link>
+              </HashLink>
             </div>
           </div>
         </div>
@@ -42,10 +48,14 @@ const Service = () => {
                 At JADSON, food production is our main business, along with
                 agricultural assistance and/or consulting services that meet the
                 demands of our clients.
-              </p>
-              <Link to='/contact'>
+              </p><HashLink
+                to={'/contact/#cop'}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              >
                 <button class='contacts1'>Contact us</button>
-              </Link>
+              </HashLink>
             </div>
           </div>
           {/* <div class="mob-image">

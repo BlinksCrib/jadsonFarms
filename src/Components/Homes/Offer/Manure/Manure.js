@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 // import fish from '../../../../assets/fish.png';
 import './Manure.css'
 
@@ -12,25 +13,40 @@ const Manure = () => {
             <h4>
               Livestock <br /> Production
             </h4>
-            <Link to='/service'>
+            <HashLink
+              to={'/service/#livestock'}
+              scroll={(el) =>
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }
+            >
               <button className='manure-but'>Learn more</button>
-            </Link>
+            </HashLink>
           </div>
           <div className='manure2'>
             <h4>
               Feed <br /> Milling
             </h4>
-            <a href='/service#quality'>
+            <HashLink
+              to={'/service/#quality'}
+              scroll={(el) =>
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }
+            >
               <button className='manure-but'>Learn more</button>
-            </a>
+            </HashLink>
           </div>
           <div className='manure3'>
             <h4>
               Manure <br /> Processing
             </h4>
-            <Link to='/service'>
+            <HashLink
+              to={'/service/#practice'}
+              scroll={(el) =>
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }
+            >
               <button className='manure-but'>Learn more</button>
-            </Link>
+            </HashLink>
           </div>
         </div>
       </div>

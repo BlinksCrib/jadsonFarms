@@ -9,7 +9,7 @@ import servicecow from '../../../assets/servicecow.png'
 const MoreLivestock = () => {
 
   return (
-    <section class='about-us'>
+    <section class='about-us' id="livestock">
       <div className='pad'>
         <div
           class='do'

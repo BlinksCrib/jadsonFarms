@@ -27,7 +27,6 @@
 }
 .agriculture h1 {
   font-size: 40px;
-  line-height: 1.3em;
   padding-bottom: 10px;
   font-weight: var(--font-large);
 }
@@ -52,7 +51,6 @@ span {
 }
 .mob h1 {
   font-size: 40px;
-  line-height: 1.3;
   padding-bottom: 10px;
   font-weight: var(--font-large);
 }

@@ -24,17 +24,17 @@
   justify-content: flex-start;
 }
 .all-pad {
-  width: 30%;
+  width: 40% !important;
   color: var(--pry-white-color);
 }
-.support h1 {
-  font-size: 40px;
-  line-height: 1.3em;
+.desk h1 {
+  font-size: 60px;
   padding-bottom: 10px;
+  max-width: 100%;
   font-weight: var(--font-large);
 }
-span{
-    color: var(--span-color);
+span {
+  color: var(--span-color);
 }
 .contacth {
   background-color: var(--contact-back);
@@ -43,6 +43,14 @@ span{
   color: var(--pry-white-color);
   padding: 14px 47px;
   font-size: 18px;
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+.contacth:hover,
+.contacth1:hover {
+  outline: 2px solid var(--pry-white-color);
+  outline-offset: 5px;
+  outline-style: groove;
 }
 .mob {
   display: none;
@@ -57,17 +65,20 @@ span{
 }
 .mob1 h1 {
   color: var(--pry-white-color) !important;
+  max-width: 100%;
 }
 .mob1 p {
   color: var(--pry-white-color) !important;
+  max-width: 100%;
 }
 .pade {
   /* background-color: var(--back); */
   height: calc(100vh - 10vh);
-    width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.9), rgba(4,9,30,0.9)), url(../../../assets/home.png);
-    background-position: center;
-    background-size: cover;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.9), rgba(4, 9, 30, 0.9)),
+    url(../../../assets/home.png);
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,6 +91,8 @@ span{
   color: var(--pry-white-color);
   padding: 20px 47px;
   font-size: 18px;
+  transition: 0.5s linear;
+  cursor: pointer;
 }
 .mob h1 {
   font-size: 40px;
@@ -125,9 +138,46 @@ span{
     width: 100%;
   }
   .mob h1 {
-  font-size: 10px;
-  line-height: 1.3em;
-  padding-bottom: 10px;
-  font-weight: var(--font-large);
+    font-size: 10px;
+    font-size: 60px !important;
+    padding-bottom: 10px;
+    font-weight: var(--font-large);
+  }
 }
+@media screen and (max-width: 564px) {
+  .mob h1 {
+    font-size: 50px !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mob h1 {
+    font-size: 42px !important;
+  }
+  .mob p {
+    font-size: 13.5px !important;
+  }
+}
+@media screen and (max-width: 374px) {
+  .mob h1 {
+    font-size: 35px !important;
+  }
+  .mob p {
+    font-size: 11.5px !important;
+  }
+}
+@media screen and (max-width: 374px) {
+  .mob h1 {
+    font-size: 32px !important;
+  }
+  .mob p {
+    font-size: 11px !important;
+  }
+}
+@media screen and (max-width: 288px) {
+  .mob h1 {
+    font-size: 30px !important;
+  }
+  .mob p {
+    font-size: 10.5px !important;
+  }
 }

@@ -27,6 +27,15 @@
   max-width: 80%;
   line-height: 1.25;
 }
+
+@media screen and (max-width: 992px) {
+  .feed_cont2 h1{
+  max-width: 100%;  
+  font-size: 2.8rem;
+
+  /* max-width: 450px; */
+}
+}
 @media screen and (max-width:600px) {
   .feed_cont2 h1{
   font-size: 2.5rem;

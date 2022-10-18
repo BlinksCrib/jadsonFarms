@@ -7,14 +7,14 @@ import Contactcon from './Contactcon/Contactcon'
 import Formbox from './Formbox/Formbox'
 
 const Contacts = () => {
-  const routepath = useLocation()
-  const onTop = () => {
-    window.scrollTo(0, 0)
-  }
+  // const routepath = useLocation()
+  // const onTop = () => {
+  //   window.scrollTo(0, 0)
+  // }
 
-  useEffect(() => {
-    onTop()
-  }, [routepath])
+  // useEffect(() => {
+  //   onTop()
+  // }, [routepath])
 
   return (
     <div className="parent-cont" style={{marginTop: "10vh"}}>

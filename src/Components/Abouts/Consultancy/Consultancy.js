@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import './Consultancy.css'
 
 
@@ -16,9 +17,14 @@ const Consultancy = ({title}) => {
                 Consultancy Services through tested and trusted services and
                 systems for the continual growth of agriculture industry.
               </p>
-              <Link to='/contact'>
+              <HashLink
+                to={'/contact/#cop'}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              >
                 <button class='contact-us'>Contact us</button>
-              </Link>
+              </HashLink>
             </div>
           </div>
         </div>

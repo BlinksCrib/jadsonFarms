@@ -5,7 +5,7 @@ import servicemillet from '../../../assets/servicemillet.png'
 
 const Quality = () => {
   return (
-    <section class='about-us'>
+    <section class='about-us' id="quality">
       <div className='pad' id='quality'>
         <div class='mining'>
           <div class='mining-text'>

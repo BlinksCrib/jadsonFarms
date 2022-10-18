@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--pry-green-color);
-  padding: 20px 0;
+  padding: 4rem 0;
   margin-bottom: 4rem;
 }
 .pas {
@@ -76,6 +76,14 @@ form {
   padding: 11px 47px;
   font-size: 18px;
   font-weight: var(--font-large);
+  transition: 0.5s linear;
+}
+.contactus:hover{
+  outline: 2px solid var(--pry-white-color);
+  outline-offset: 5px;
+  outline-style: groove;
+  background-color: white;
+  color: var(--pry-green-color);
 }
 @media (max-width: 992px) {
   .expect {

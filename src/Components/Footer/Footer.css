@@ -55,6 +55,14 @@ footer ul {
   padding: 10px 40px;
   width: 100%;
   font-size: 18px;
+  transition: 0.5s linear;
+}
+.contac-us:hover{
+  outline: 2px solid var(--pry-white-color);
+  outline-offset: 5px;
+  outline-style: groove;
+  background-color: white;
+  color: var(--pry-green-color);
 }
 .socials {
   display: flex;

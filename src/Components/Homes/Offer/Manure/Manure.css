@@ -85,6 +85,14 @@
   font-size: 18px;
   margin-top: 1.2rem !important;
   margin-bottom: 25px;
+  transition: .5s linear;
+}
+.manure-but:hover {
+  outline: 2px solid var(--pry-white-color);
+  outline-offset: 5px;
+  outline-style: groove;
+  background-color: white;
+  color: var(--pry-green-color);
 }
 @media screen and (max-width: 992px) {
   .manure-cont {

@@ -55,6 +55,14 @@
   padding: 10px 40px;
   width: 100%;
   font-size: 18px;
+  transition: 0.5s linear;
+}
+.contac-usf:hover{
+  outline: 2px solid var(--pry-green-color);
+  outline-offset: 5px;
+  outline-style: groove;
+  background-color: var(--pry-green-color);
+  color: var(--pry-white-color);
 }
 .socialsf {
   display: flex;

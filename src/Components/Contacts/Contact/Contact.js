@@ -2,6 +2,7 @@ import React from 'react'
 import './Contact.css'
 import contact from '../../../assets/contact.png'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 
 const Contact = () => {
@@ -22,8 +23,14 @@ const Contact = () => {
           <div class='padec'>
             <div class='pad'>
               <h1>We expect to hear from You</h1>
-              <button class='contact1'>Contact Us
-              </button>
+              <HashLink
+                to={'/contact/#cop'}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              >
+              <button class='contact1'>Contact Us</button>
+              </HashLink>
             </div>
           </div>
           {/* <div class='mob-image'>

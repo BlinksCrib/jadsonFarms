@@ -1,7 +1,8 @@
 import React from 'react';
 import "./Footer.css";
-import Jadsonbgremoved2 from '../../assets/Jadsonbgremoved2.png';
+import Jadsonbgremoved2 from '../../assets/Jadsonbgremoved22.png';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
   const date = new Date().getFullYear();
@@ -39,9 +40,14 @@ const Footer = () => {
               </ul>
             </div>
             <div class='part'>
-              <Link to='/contact'>
+              <HashLink
+                to={'/contact/#cop'}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              >
                 <button class='contac-us'>Contact us</button>
-              </Link>
+              </HashLink>
 
               <div class='socials'>
                 <div class='icon'>
@@ -60,9 +66,14 @@ const Footer = () => {
         <div class='par1'>
           <div class='paf1'>
             <div class='pad'>
-              <Link to='/contact'>
+              <HashLink
+                to={'/contact/#cop'}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              >
                 <button class='contac-us'>Contact us</button>
-              </Link>
+              </HashLink>
               <div class='socials'>
                 <div class='icon'>
                   <i class='fa-brands fa-facebook-f'></i>

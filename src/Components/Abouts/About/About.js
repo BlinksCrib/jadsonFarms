@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import './About.css'
 
 const About = () => {
@@ -11,7 +12,7 @@ const About = () => {
             <div class='desk'>
               <h1>
                 When It is
-                <span> Agriculture,</span>
+                <span> Agriculture, </span>
                 You are at
                 <span> the right place</span>{' '}
               </h1>
@@ -25,15 +26,18 @@ const About = () => {
             <div class='pad'>
               <h1>
                 When It is
-                <span> Agriculture,</span>
+                <span> Agriculture, </span>
                 You are at
                 <span> the right place</span>
               </h1>
-              <Link
-                to='/contact'
+              <HashLink
+                to={'/contact/#cop'}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
               >
                <button class='contact1'>Contact Us</button>
-              </Link>
+              </HashLink>
             </div>
           </div>
           {/* <div class='mob-image'>

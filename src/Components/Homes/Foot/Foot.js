@@ -1,13 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import './Foot.css';
-import Jadsonbgremoved1 from '../../../assets/Jadsonbgremoved1.png'
-
-
+import { Link } from 'react-router-dom'
+import './Foot.css'
+import Jadsonbgremoved1 from '../../../assets/Jadsonbgremoved11.png'
+import { HashLink } from 'react-router-hash-link'
 
 const Foot = () => {
-
-    const date = new Date().getFullYear();
+  const date = new Date().getFullYear()
 
   return (
     <section>
@@ -38,13 +36,25 @@ const Foot = () => {
                 <Link to='/about'>
                   <li>About Us</li>
                 </Link>
-                <Link to='/contact'>
+                <HashLink
+                  to={'/contact'}
+                  scroll={(el) =>
+                    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                  }
+                >
                   <li>Contact Us</li>
-                </Link>
+                </HashLink>
               </ul>
             </div>
             <div class='partf'>
-              <button class='contac-usf'>Contact Us</button>
+              <HashLink
+                to={'/contact/#cop'}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              >
+                <button class='contac-usf'>Contact Us</button>
+              </HashLink>
 
               <div class='socialsf'>
                 <div class='iconf'>
@@ -63,7 +73,14 @@ const Foot = () => {
         <div class='par1f'>
           <div class='paf1f'>
             <div class='pad'>
-              <button class='contac-usf'>Contact Us</button>
+              <HashLink
+                to={'/contact/#cop'}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              >
+                <button class='contac-usf'>Contact Us</button>
+              </HashLink>
               <div class='socialsf'>
                 <div class='iconf'>
                   <i class='fa-brands fa-facebook-f'></i>
@@ -81,7 +98,8 @@ const Foot = () => {
         <div class='technologyf'>
           <div class='pakf'>
             <p style={{ paddingBottom: '0px' }}>
-              Copyright &copy; <span style={{ color: 'var(--pry-green-color)' }}>{date}</span> ||
+              Copyright &copy;{' '}
+              <span style={{ color: 'var(--pry-green-color)' }}>{date}</span> ||
               All rights reserved
             </p>
             <p>Developed by FireSwitch Technologies</p>

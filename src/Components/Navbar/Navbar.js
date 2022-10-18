@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import Jadsonbgremoved1 from '../../assets/Jadsonbgremoved1.png';
+import Jadsonbgremoved1 from '../../assets/Jadsonbgremoved11.png';
 import "./Navbar.css"
 // import logo from "./logo.jpeg";
 const Navbar = () => {

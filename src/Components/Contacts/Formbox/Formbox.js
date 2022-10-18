@@ -2,45 +2,59 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Formbox.css'
 
-
 const Formbox = () => {
-    const [mailFrom, setMailFrom] = useState("")
-    const [body, setBody] = useState("")
-    const [sendername, setSendername] = useState("")
+  const [mailFrom, setMailFrom] = useState('')
+  const [body, setBody] = useState('')
+  const [sendername, setSendername] = useState('')
 
+  const [messageResponse, setMessageResponse] = useState('')
 
-const onTop = (e) => {
-  e.preventDefault()
+  const [timeOut, setTimeOut] = useState(false)
 
-  // Handling the form submission
+  const [loading, setLoading] = useState(false)
 
-  axios
-    .post(
-      'https://system.mailer.reni.tech/api/sendMail',
-      JSON.stringify({
-        apptoken: 'H8938H33R8H9',
-        mailTo: 'info@jadsonfarms.com',
-        mailFrom: mailFrom,
-        body: body,
-        subject: 'This is a message from jadsonfarms.com',
-        sendername: sendername,
+  const onTop = (e) => {
+    e.preventDefault()
+    setLoading(true)
+
+    setTimeout(() => {
+      setTimeOut(false)
+    }, 10000)
+    // Handling the form submission
+
+    axios
+      .post(
+        'https://system.mailer.reni.tech/api/sendMail',
+        JSON.stringify({
+          apptoken: 'H8938H33R8H9',
+          mailTo: 'info@jadsonfarms.com',
+          mailFrom: mailFrom,
+          body: body,
+          subject: 'This is a message from jadsonfarms.com',
+          sendername: sendername,
+        })
+      )
+      .then((res) => {
+        if (res.data.success === true) {
+          setLoading(false)
+          setMessageResponse(res.data.message)
+          setTimeOut(true)
+          setMailFrom('')
+          setBody('')
+          setSendername('')
+          // navigate('/profile')
+          // props.history.push("/profile");
+        } else {
+          setLoading(false)
+        }
       })
-    )
-    .then((res) => {
-      if (res.data.success === true) {
-        // navigate('/profile')
-        // props.history.push("/profile");
-      } else {
-      }
-    })
-}
-
+  }
 
   return (
-    <section class='message'>
+    <section class='message' id='cop'>
       <div class='pas'>
         <h1 data-aos='flip-right'>Write A Message to Us</h1>
-        <form action=''>
+        <form>
           <div class='name'>
             <input
               type='text'
@@ -48,9 +62,8 @@ const onTop = (e) => {
               onChange={(e) => setSendername(e.target.value)}
               value={sendername}
               id='na'
-              placeholder='Can we know your Fullname...'
+              placeholder='Can we know your Full Name...'
               required
-              autoComplete='on'
             />
           </div>
           <div class='name'>
@@ -62,7 +75,6 @@ const onTop = (e) => {
               id='na'
               placeholder='Your email address*'
               required
-              autoComplete='on'
             />
           </div>
           <div class='write'>
@@ -78,14 +90,28 @@ const onTop = (e) => {
             ></textarea>
           </div>
         </form>
+        {timeOut ? (
+          <p style={{ textAlign: 'center', color: '#fff' }}>
+            {messageResponse}
+          </p>
+        ) : (
+          <></>
+        )}
         <div class='mid'>
-          <button
-            type='submit'
-            class='contactus'
-            onClick={(e) => onTop(e)}
-          >
-            Contact Us
-          </button>
+          {loading ? (
+            <button
+              type='submit'
+              class='contactus'
+              style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }}
+              disabled
+            >
+              Sending...
+            </button>
+          ) : (
+            <button type='submit' class='contactus' onClick={(e) => onTop(e)}>
+              Send
+            </button>
+          )}
         </div>
       </div>
     </section>

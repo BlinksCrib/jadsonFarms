@@ -22,22 +22,11 @@
   justify-content: flex-start;
 }
 .all-pad {
-  width: 30%;
+  width: 40%;
   color: var(--pry-white-color);
-}
-.support h1 {
-  font-size: 40px;
-  line-height: 1.3em;
-  padding-bottom: 10px;
-  font-weight: var(--font-large);
 }
 .first {
   color: var(--span-color);
-}
-.support p {
-  font-size: 18px;
-  line-height: 1.3em;
-  padding-bottom: 10px;
 }
 .contacts {
   background-color: var(--contact-back);
@@ -46,6 +35,14 @@
   color: var(--pry-white-color);
   padding: 14px 47px;
   font-size: 18px;
+  transition: 0.5s linear;
+}
+.contacts:hover, .contacts1:hover {
+  outline: 2px solid var(--pry-white-color);
+  outline-offset: 5px;
+  outline-style: groove;
+  background-color: white;
+  color: var(--pry-green-color);
 }
 .mob {
   display: none;
