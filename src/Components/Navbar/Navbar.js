@@ -5,6 +5,7 @@ import "./Navbar.css"
 // import logo from "./logo.jpeg";
 const Navbar = () => {
   const navRef = useRef(null);
+   const [toggle, setToggle] = useState(false);
 
  let activeStyle = {
    padding: '0px 0px 3px 0px',
@@ -21,11 +22,7 @@ const Navbar = () => {
    margin: "0 40px",
    fontWeight: '900 !important',
  }
- const [isActive, setActive] = useState('false')
 
- const handleToggle = () => {
-   setActive(!isActive)
- }
 
 
   const openNav = () => {
