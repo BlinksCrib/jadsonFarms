@@ -3,14 +3,9 @@ import "./Map.css"
 
 const Map = () => {
 
-google.maps.event.addListenerOnce(map, 'idle', () => {
-  document.getElementsByTagName('iframe')[0].title = 'Google Maps'
-})
   
   return (
-    <div
-      className='preant-cont'
-    >
+    <div className='preant-cont'>
       <div className='sub-map-cont'>
         <div className='map-cont'>
           <iframe
@@ -22,6 +17,7 @@ google.maps.event.addListenerOnce(map, 'idle', () => {
             allowFullScreen=''
             aria-hidden='false'
             tabIndex='0'
+            title='map'
           ></iframe>
         </div>
       </div>
