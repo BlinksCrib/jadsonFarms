@@ -1,11 +1,10 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import Jadsonbgremoved1 from '../../assets/Jadsonbgremoved11.png';
 import "./Navbar.css"
 // import logo from "./logo.jpeg";
 const Navbar = () => {
   const navRef = useRef(null);
- const [toggle, setToggle] = useState(false);
 
  let activeStyle = {
    padding: '0px 0px 3px 0px',

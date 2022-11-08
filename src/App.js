@@ -10,7 +10,6 @@ import Services from "./Components/Services/Services";
 // aos animation
 // import AOS from 'aos'
 // import 'aos/dist/aos.css'
-import { useEffect } from "react";
 
 function App() {
 

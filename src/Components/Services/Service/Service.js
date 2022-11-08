@@ -1,7 +1,5 @@
 import React from 'react'
 import './Service.css'
-import service from '../../../assets/service.png'
-import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
 

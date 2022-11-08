@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom'
+import React from 'react'
 import Consultancy from '../Abouts/Consultancy/Consultancy'
 import Footer from '../Footer/Footer'
 import Also from './Also/Also'

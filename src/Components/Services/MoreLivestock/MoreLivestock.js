@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { Carousel } from 'antd'
+import React from 'react'
 import "./MoreLivestock.css"
 import servicecow from '../../../assets/servicecow.png'
 

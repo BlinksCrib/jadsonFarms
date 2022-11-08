@@ -1,7 +1,5 @@
 import React from 'react'
 import './Contact.css'
-import contact from '../../../assets/contact.png'
-import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
 
@@ -33,9 +31,6 @@ const Contact = () => {
               </HashLink>
             </div>
           </div>
-          {/* <div class='mob-image'>
-            <img src={contact} alt='' />
-          </div> */}
         </div>
       </section>
     </>

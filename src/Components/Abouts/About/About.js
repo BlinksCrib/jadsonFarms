@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import './About.css'
 
@@ -40,9 +39,6 @@ const About = () => {
               </HashLink>
             </div>
           </div>
-          {/* <div class='mob-image'>
-            <img src='./images/Rectangle 82 (1).png' alt='' />
-          </div> */}
         </div>
       </section>
     </>
