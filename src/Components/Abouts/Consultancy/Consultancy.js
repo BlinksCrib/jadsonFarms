@@ -1,16 +1,14 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 import './Consultancy.css'
 
-
-const Consultancy = ({title}) => {
+const Consultancy = () => {
   return (
     <>
-      <section class='about-us' style={{ padding: '0.6rem 0px' }}>
-        <div class='pad'>
-          <div class='consultancy'>
-            <div class='pat'>
+      <section className='about-us' style={{ padding: '0.6rem 0px' }}>
+        <div className='pad'>
+          <div className='consultancy'>
+            <div className='pat'>
               <h1>We offer Tested and Trusted Farm Consultancy</h1>
               <p>
                 At <span>Jadson Farms</span> , we bring innovations to our
@@ -23,25 +21,30 @@ const Consultancy = ({title}) => {
                   el.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }
               >
-                <button class='contact-us'>Contact us</button>
+                <button className='contact-us'>Contact us</button>
               </HashLink>
             </div>
           </div>
         </div>
       </section>
-      <section class='consult' style={{ marginBottom: '4rem' }}>
-        <div class='consultancy1'>
-          <div class='pact'>
-            <div class='pad'>
+      <section className='consult' style={{ marginBottom: '4rem' }}>
+        <div className='consultancy1'>
+          <div className='pact'>
+            <div className='pad'>
               <h1>We offer Tested and Trusted Farm Consultancy</h1>
               <p>
                 At Jadson Farms, we bring innovations to our Consultancy
                 Services through tested and trusted services and systems for the
                 continual growth of agriculture industry.
               </p>
-              <Link to='/contact'>
-                <button class='contact-us1'>Contact us</button>
-              </Link>
+              <HashLink
+                to={'/contact/#cop'}
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                }
+              >
+                <button className='contact-us1'>Contact us</button>
+              </HashLink>
             </div>
           </div>
         </div>

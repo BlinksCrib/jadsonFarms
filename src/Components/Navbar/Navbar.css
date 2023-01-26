@@ -102,7 +102,7 @@
   /* Black*/
   /* Disable horizontal scroll */
   padding-top: 60px !important;
-  margin-top: 65px !important;
+  margin-top: 10vh !important;
   /* Place content 60px from the top */
   transition: 1s ease;
   /* 0.5 second transition effect to slide in the sidebar */

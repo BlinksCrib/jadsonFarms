@@ -5,10 +5,10 @@ import './About.css'
 const About = () => {
   return (
     <>
-      <section class='agriculture'>
-        <div class='all'>
-          <div class='all-pad'>
-            <div class='desk'>
+      <section className='agriculture'>
+        <div className='all'>
+          <div className='all-pad'>
+            <div className='desk'>
               <h1>
                 When It is
                 <span> Agriculture, </span>
@@ -19,10 +19,10 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section class='mob'>
-        <div class='mob1'>
-          <div class='padea'>
-            <div class='pad'>
+      <section className='mob'>
+        <div className='mob1'>
+          <div className='padea'>
+            <div className='pad'>
               <h1>
                 When It is
                 <span> Agriculture, </span>
@@ -35,7 +35,7 @@ const About = () => {
                   el.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }
               >
-               <button class='contact1'>Contact Us</button>
+                <button className='contact1'>Contact Us</button>
               </HashLink>
             </div>
           </div>

@@ -10,11 +10,11 @@ const Foot = () => {
   return (
     <section>
       <footer className='foot'>
-        <div class='parf'>
-          <div class='paff'>
-            <div class='partf'>
-              <div class='part-imagef'>
-                <img src={Jadsonbgremoved1} alt='' />
+        <div className='parf'>
+          <div className='paff'>
+            <div className='partf'>
+              <div className='part-imagef'>
+                <img src={Jadsonbgremoved1} alt='Jadsonbgremoved' />
 
                 {/* <p>
                   Jadson <b /> Integrated Farms & Services{' '}
@@ -24,7 +24,7 @@ const Foot = () => {
                 JADSON INTEGRATED FARMS & SERVICES LTD.
               </h1>
             </div>
-            <div class='partf'>
+            <div className='partf'>
               <h1>LINKS</h1>
               <ul>
                 <Link to='/'>
@@ -46,57 +46,57 @@ const Foot = () => {
                 </HashLink>
               </ul>
             </div>
-            <div class='partf'>
+            <div className='partf'>
               <HashLink
                 to={'/contact/#cop'}
                 scroll={(el) =>
                   el.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }
               >
-                <button class='contac-usf'>Contact Us</button>
+                <button className='contac-usf'>Contact Us</button>
               </HashLink>
 
-              <div class='socialsf'>
-                <div class='iconf'>
-                  <i class='fa-brands fa-facebook-f'></i>
+              <div className='socialsf'>
+                <div className='iconf'>
+                  <i className='fa-brands fa-facebook-f'></i>
                 </div>
-                <div class='iconf'>
-                  <i class='fab fa-twitter'></i>
+                <div className='iconf'>
+                  <i className='fab fa-twitter'></i>
                 </div>
-                <div class='iconf'>
-                  <i class='fab fa-youtube'></i>
+                <div className='iconf'>
+                  <i className='fab fa-youtube'></i>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class='par1f'>
-          <div class='paf1f'>
-            <div class='pad'>
+        <div className='par1f'>
+          <div className='paf1f'>
+            <div className='pad'>
               <HashLink
                 to={'/contact/#cop'}
                 scroll={(el) =>
                   el.scrollIntoView({ behavior: 'smooth', block: 'start' })
                 }
               >
-                <button class='contac-usf'>Contact Us</button>
+                <button className='contac-usf'>Contact Us</button>
               </HashLink>
-              <div class='socialsf'>
-                <div class='iconf'>
-                  <i class='fa-brands fa-facebook-f'></i>
+              <div className='socialsf'>
+                <div className='iconf'>
+                  <i className='fa-brands fa-facebook-f'></i>
                 </div>
-                <div class='iconf'>
-                  <i class='fab fa-twitter'></i>
+                <div className='iconf'>
+                  <i className='fab fa-twitter'></i>
                 </div>
-                <div class='iconf'>
-                  <i class='fab fa-youtube'></i>
+                <div className='iconf'>
+                  <i className='fab fa-youtube'></i>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class='technologyf'>
-          <div class='pakf'>
+        <div className='technologyf'>
+          <div className='pakf'>
             <p style={{ paddingBottom: '0px' }}>
               Copyright &copy;{' '}
               <span style={{ color: 'var(--pry-green-color)' }}>{date}</span> ||

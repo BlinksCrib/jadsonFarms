@@ -51,11 +51,11 @@ const Formbox = () => {
   }
 
   return (
-    <section class='message' id='cop'>
-      <div class='pas'>
+    <section className='message' id='cop'>
+      <div className='pas'>
         <h1 data-aos='flip-right'>Write A Message to Us</h1>
         <form>
-          <div class='name'>
+          <div className='name'>
             <input
               type='text'
               name='sendername'
@@ -66,7 +66,7 @@ const Formbox = () => {
               required
             />
           </div>
-          <div class='name'>
+          <div className='name'>
             <input
               type='email'
               name='mailFrom'
@@ -77,7 +77,7 @@ const Formbox = () => {
               required
             />
           </div>
-          <div class='write'>
+          <div className='write'>
             <textarea
               name=''
               id='writ'
@@ -97,18 +97,22 @@ const Formbox = () => {
         ) : (
           <></>
         )}
-        <div class='mid'>
+        <div className='mid'>
           {loading ? (
             <button
               type='submit'
-              class='contactus'
+              className='contactus'
               style={{ backgroundColor: 'rgba(255, 255, 255, 0.7)' }}
               disabled
             >
               Sending...
             </button>
           ) : (
-            <button type='submit' class='contactus' onClick={(e) => onTop(e)}>
+            <button
+              type='submit'
+              className='contactus'
+              onClick={(e) => onTop(e)}
+            >
               Send
             </button>
           )}

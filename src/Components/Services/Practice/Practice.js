@@ -3,18 +3,15 @@ import './Practice.css'
 import smallsmile from '../../../assets/smallsmile.png'
 import { HashLink } from 'react-router-hash-link'
 
-
-
-
 const Practice = () => {
   return (
-    <section class='about-us' id='practice'>
+    <section className='about-us' id='practice'>
       <div className='pad'>
-        <div class='animal-manure'>
-          <div class='animal-manure-image'>
+        <div className='animal-manure'>
+          <div className='animal-manure-image'>
             <img src={smallsmile} alt='' />
           </div>
-          <div class='animal-manure-text'>
+          <div className='animal-manure-text'>
             <h1>Best-practice Animal Manure Processing</h1>
             <p>
               Farmyard waste can be processed and recycled to the farm as an
@@ -22,14 +19,14 @@ const Practice = () => {
             </p>
           </div>
         </div>
-        <div class='midp'>
+        <div className='midp'>
           <HashLink
-            to={'/service/#practice'}
+            to={'/contact/#cop'}
             scroll={(el) =>
               el.scrollIntoView({ behavior: 'smooth', block: 'start' })
             }
           >
-            <button class='contactp midp'>Contact Us</button>
+            <button className='contactp midp'>Contact Us</button>
           </HashLink>
         </div>
       </div>

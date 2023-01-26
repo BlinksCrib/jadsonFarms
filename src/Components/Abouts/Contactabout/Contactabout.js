@@ -1,31 +1,22 @@
 import React from 'react'
-import "./Contactabout.css"
+import './Contactabout.css'
 
 const Contactabout = () => {
   return (
-    <section class='contacta'>
-      <div class='pad'>
-        <h1
-        >
-          Free Feel To Contact Us
-        </h1>
-        <div
-          class='pac'
-        >
-          <div
-            class='contact-menu'
-          >
-            <i class='fa-solid fa-location-dot'></i>
+    <section className='contacta'>
+      <div className='pad'>
+        <h1>Free Feel To Contact Us</h1>
+        <div className='pac'>
+          <div className='contact-menu'>
+            <i className='fa-solid fa-location-dot'></i>
             <h4>Head Office </h4>
             <p>Federal House Estate, Oke Onitea, Osogbo, Osun State.</p>
             <h4>Branch Office</h4>
             <p>Km 3 Ikirun/Inisa Road, Ikirun, Osun State.</p>
           </div>
-          <div
-            class='contact-menu'
-          >
-            <div class='backa'>
-              <i class='fa-solid fa-phone'></i>
+          <div className='contact-menu'>
+            <div className='backa'>
+              <i className='fa-solid fa-phone'></i>
               <a href='tel:+234 815 1240 517'>
                 <p>+234 815 1240 517</p>
               </a>
@@ -34,12 +25,13 @@ const Contactabout = () => {
               </a>
             </div>
           </div>
-          <div
-            class='contact-menu'
-          >
-            <div class='backa'>
+          <div className='contact-menu'>
+            <div className='backa'>
               <a href='mailto:jadsonfarms@gmail.com'>
-                <i class='fa-regular fa-envelope' style={{color: "#fff",}}></i>
+                <i
+                  className='fa-regular fa-envelope'
+                  style={{ color: '#fff' }}
+                ></i>
                 <p>
                   {' '}
                   jadsonfarms <br />
